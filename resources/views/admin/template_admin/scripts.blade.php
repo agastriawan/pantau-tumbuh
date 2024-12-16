@@ -1,0 +1,11 @@
+<script src="{{ asset("assets_admin/libs/jquery/jquery.min.js") }}"></script>
+<script src="{{ asset("assets_admin/libs/bootstrap/js/bootstrap.bundle.min.js") }}"></script>
+<script src="{{ asset("assets_admin/libs/simplebar/simplebar.min.js") }}"></script>
+<script src="{{ asset("assets_admin/libs/node-waves/waves.min.js") }}"></script>
+<script src="{{ asset("assets_admin/libs/waypoints/lib/jquery.waypoints.min.js") }}"></script>
+<script src="{{ asset("assets_admin/libs/jquery.counterup/jquery.counterup.min.js") }}"></script>
+<script src="{{ asset("assets_admin/libs/feather-icons/feather.min.js") }}"></script>
+<script src="{{ asset("assets_admin/libs/apexcharts/apexcharts.min.js") }}"></script>
+<script src="https://apexcharts.com/samples/assets/stock-prices.js"></script>
+<script src="{{ asset("assets_admin/js/pages/ecommerce-dashboard.init.js") }}"></script>
+<script src="{{ asset("assets_admin/js/app.js") }}"></script>
