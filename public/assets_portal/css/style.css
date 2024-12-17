@@ -136,6 +136,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@media (min-width: 1024px) {
+  #btn-daftar {
+    display: block !important;
+  }
+}
+
+
 iframe {
   border: none;
   width: 100%;

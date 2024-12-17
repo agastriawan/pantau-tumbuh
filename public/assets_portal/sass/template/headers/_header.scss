@@ -1,3 +1,111 @@
+.th-btn-log {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: $title-color;
+    background: linear-gradient(180deg, $theme-color 37.5%, #DDFFF1 100%);
+    box-shadow: 0px 3px 15px rgba(174, 211, 195, 0.7);
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 21px 30px;
+    min-width: 170px;
+    border-radius: 30px;
+    &:before {
+        content: "";
+        position: absolute;
+        height: 56%;
+        top: 1px;
+        left: 10px;
+        width: calc(100% - 20px);
+        background: linear-gradient(180deg, #A9FFDA 0%, rgba(169, 255, 218, 0) 78.65%);
+        filter: blur(2px);
+        z-index: -1;
+        transition: all 0.4s ease-out;
+        border-radius: inherit;
+    }
+    i {
+        font-size: 0.95em;
+    }
+    &:hover{
+        transform: translateY(-3px);
+    }
+
+    &.style2 {
+        background: linear-gradient(180deg, #C2D4FF 37.5%, #F0F4FF 100%);
+        box-shadow: 0px 2px 10px rgba(184, 191, 208, 0.5);
+        &:before {
+            background: linear-gradient(180deg, #F9FAFD 0%, rgba(249, 250, 253, 0) 78.65%);
+        }
+    }
+    &.style3 {
+        &:hover {
+            box-shadow: 0px 3px 12px rgba($color: #21325d, $alpha: 0.5);
+        }
+    }
+    &.style4 {
+        background-color: $theme-color2;
+        background: linear-gradient(180deg, $theme-color2 37.5%, #E3EBFF 100%);
+        box-shadow: 0px 3px 15px #B0BAD3;
+        color: $white-color;
+        &:before {
+            background: linear-gradient(180deg, #A3BDFF 0%, rgba(155, 184, 255, 0) 78.65%);
+        }
+    }
+    &.style5 {
+        background-color: $theme-color;
+        color: $white-color;
+        &:hover {
+            color: $theme-color;
+            &:before,
+            &:after {
+                background-color: $white-color;
+            }
+        }
+    } 
+    &.style6 {
+        background-color: $title-color;
+        &:hover {
+            background-color: $theme-color;
+            &:before,
+            &:after {
+                background-color: $theme-color;
+            }
+        }
+    }
+    &.shadow-1 {
+        box-shadow: 0px 3px 12px rgba($color: #21325d, $alpha: 0.5);
+    } 
+    &.btn-fw {
+        width: 100%;
+        box-shadow: 0px 3px 15px rgba(174, 211, 195, 0.7);
+    }
+    &.style-smoke {
+        background: $smoke-color;
+        color: $theme-color2;
+        padding: 11px 18px;
+        box-shadow: none;
+        &:before {
+            display: none;
+        }
+        &:hover {
+            background-color: $theme-color2;
+            color: $white-color;
+        }
+    }
+    &.btn-sm {
+        padding: 16px 25px;
+        min-width: 140px;
+    }
+}
+
+
 .th-header {
     position: relative;
     z-index: 41;
@@ -450,7 +558,7 @@
     .header-layout1 {
         .header-button {
             .th-btn {
-                display: none;
+                display: block;
             }
         }
         .header-logo {

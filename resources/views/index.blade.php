@@ -4,93 +4,65 @@
 @endsection
 
 @section('content')
-    <div class="th-hero-wrapper hero-2" id="hero" data-bg-src="{{ asset("assets_portal/img/hero/hero_bg_2_1.jpg") }}">
+    <div class="th-hero-wrapper hero-2" id="hero" data-bg-src="{{ asset('assets_portal/img/hero/hero_bg_2_1.jpg') }}">
         <div class="hero-inner">
             <div class="container">
                 <div class="hero-style2">
-                    <span class="sub-title"><img src="{{ asset("assets_portal/img/theme-img/title_icon.svg") }}" alt="shape">24/7 Emergency
-                        Service</span>
                     <h1 class="hero-title2">
-                        <span class="title1">Caring for <span class="line-text">Health</span></span>
-                        <span class="title2">Caring for You</span>
+                        <span class="title1">Anak <span class="line-text">Sehat</span></span>
+                        <span class="title2">Masa Depan Cerah</span>
                     </h1>
-                    <p class="hero-text">A brief statement outlining the purpose and mission of the clinic. This can include
-                        the commitment to patient care, community health.</p>
+                    <p class="hero-text">Bersama kita jaga pertumbuhan anak sesuai standar kesehatan. Solusi praktis untuk pemantauan dan edukasi gizi anak.</p>
                     <div class="btn-group justify-content-center">
-                        <a href="about.html" class="th-btn">Discover More</a>
-                        <a href="service.html" class="th-btn style4">See All Services</a>
+                        <a href="about.html" class="th-btn">Pantau Kesehatan Anak Disini</a>
                     </div>
                 </div>
             </div>
             <div class="hero-img">
-                <img src="{{ asset("assets_portal/img/hero/hero_2_1.png") }}" alt="Image">
+                <img width="765px" height="782px" src="{{ asset('assets_portal/img/hero/childern.png') }}" alt="Image">
             </div>
             <div class="hero-shape1">
-                <img src="{{ asset("assets_portal/img/hero/hero_shape_2_1.svg") }}" alt="shape">
+                <img src="{{ asset('assets_portal/img/hero/hero_shape_2_1.svg') }}" alt="shape">
             </div>
             <div class="hero-shape2">
-                <img src="{{ asset("assets_portal/img/hero/hero_shape_2_2.svg") }}" alt="shape">
+                <img src="{{ asset('assets_portal/img/hero/hero_shape_2_2.svg') }}" alt="shape">
             </div>
             <div class="hero-shape3">
-                <img src="{{ asset("assets_portal/img/hero/hero_shape_2_3.svg") }}" alt="shape">
+                <img src="{{ asset('assets_portal/img/hero/hero_shape_2_3.svg') }}" alt="shape">
             </div>
             <div class="hero-shape4">
-                <img src="{{ asset("assets_portal/img/hero/hero_shape_2_4.svg") }}" alt="shape">
+                <img src="{{ asset('assets_portal/img/hero/hero_shape_2_4.svg') }}" alt="shape">
             </div>
             <div class="hero-shape5">
-                <img src="{{ asset("assets_portal/img/hero/hero_shape_2_5.svg") }}" alt="shape">
+                <img src="{{ asset('assets_portal/img/hero/hero_shape_2_5.svg') }}" alt="shape">
             </div>
         </div>
     </div>
 
     <div class="space" id="about-sec">
-        <div class="shape-mockup" data-top="0" data-right="0"><img src="{{ asset("assets_portal/img/shape/pattern_shape_1.png") }}"
-                alt="shape"></div>
-        <div class="shape-mockup jump" data-bottom="10%" data-right="3%"><img src="{{ asset("assets_portal/img/shape/medicine_1.png") }}"
-                alt="shape"></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 mb-30 mb-xl-0">
                     <div class="img-box1">
                         <div class="img1">
-                            <img src="{{ asset("assets_portal/img/normal/about_1_3.png") }}" alt="About">
-                        </div>
-                        <div class="about-info">
-                            <h3 class="box-title">Dr. Esita Jabed</h3>
-                            <p class="box-text">Mention the languages <br> in which the staff.</p>
-                            <div class="box-review">
-                                <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
-                                    class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
-                                    class="fa-sharp fa-solid fa-star"></i>
-                            </div>
-                            <a href="tel:+16356478965" class="box-link"><i class="fa-solid fa-phone"></i> +163 564 78965</a>
+                            <img src="{{ asset('assets_portal/img/logo.png') }}" alt="About">
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6">
                     <div class="ps-xxl-4 ms-xl-2 text-center text-xl-start">
                         <div class="title-area mb-32">
-                            <span class="sub-title"><img src="{{ asset("assets_portal/img/theme-img/title_icon.svg") }}" alt="shape">About Us
-                                Company</span>
-                            <h2 class="sec-title">Affordable Health Care Solutions</h2>
-                            <p class="sec-text">A brief statement outlining the purpose and mission of the clinic. This can
-                                include the commitment to patient care, community health, and any specifical goals for our
-                                values.</p>
-                        </div>
-                        <div class="mb-30 mt-n1">
-                            <div class="checklist style2 list-two-column">
-                                <ul>
-                                    <li><i class="fas fa-heart-pulse"></i> Medical Professionals</li>
-                                    <li><i class="fas fa-heart-pulse"></i> Facilities and Equipment</li>
-                                    <li><i class="fas fa-heart-pulse"></i> Emergency Care</li>
-                                    <li><i class="fas fa-heart-pulse"></i> Medical Consulting</li>
-                                    <li><i class="fas fa-heart-pulse"></i> Services Offered</li>
-                                    <li><i class="fas fa-heart-pulse"></i> Specializations</li>
-                                </ul>
-                            </div>
+                            <span class="sub-title"><img src="{{ asset('assets_portal/img/theme-img/title_icon.svg') }}"
+                                    alt="shape">Tentang Kami</span>
+                            <h2 class="sec-title">Anak Sehat, Masa Depan Cerah</h2>
+                            <p class="sec-text">Aplikasi Pantau Tumbuh dikembangkan untuk membantu menangani masalah
+                                stunting pada anak di Indonesia, yang masih memiliki prevalensi tinggi akibat kekurangan
+                                gizi kronis dan infeksi berulang. Dengan aplikasi ini, orang tua dan tenaga kesehatan dapat
+                                mencatat serta memantau perkembangan kesehatan anak, termasuk berat dan tinggi badan, sesuai
+                                standar WHO.</p>
                         </div>
                         <div>
-                            <a href="about.html" class="th-btn">More About Us</a>
+                            <a href="{{ url('/tentang-kami') }}" class="th-btn">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -98,148 +70,120 @@
         </div>
     </div>
 
-    <section class="overflow-hidden bg-smoke space" id="service-sec" data-bg-src="{{ asset("assets_portal/img/bg/service_bg_1.png") }}">
+    <section class="overflow-hidden bg-smoke space" id="service-sec">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8">
                     <div class="title-area text-center">
-                        <span class="sub-title"><img src="{{ asset("assets_portal/img/theme-img/title_icon.svg") }}" alt="Icon">Our
-                            Services</span>
-                        <h2 class="sec-title">Our Mediax specialties Technical service</h2>
+                        <span class="sub-title"><img src="{{ asset('assets_portal/img/theme-img/title_icon.svg') }}"
+                                alt="Icon">Layanan Kami</span>
+                        <h2 class="sec-title">Semua layanan Pantau Tumbuh</h2>
                     </div>
                 </div>
             </div>
             <div class="row gy-4 justify-content-center">
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card" data-bg-src="{{ asset("assets_portal/img/service/service_card_1.jpg") }}">
+                    <div class="service-card"
+                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
-                            <img src="{{ asset("assets_portal/img/bg/service_card_bg.png") }}" alt="Service">
+                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset("assets_portal/img/icon/service_card_1.svg") }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/service_card_1.svg') }}" alt="Icon">
                         </div>
                         <h3 class="box-title"><a href="service-details.html">Internal Medicine</a></h3>
                         <p class="box-text">30+ Doctors</p>
-                        <a href="service-details.html" class="th-btn btn-sm style2 theme-color">Read More</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card" data-bg-src="{{ asset("assets_portal/img/service/service_card_2.jpg") }}">
+                    <div class="service-card"
+                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
-                            <img src="{{ asset("assets_portal/img/bg/service_card_bg.png") }}" alt="Service">
+                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset("assets_portal/img/icon/service_card_2.svg") }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/service_card_2.svg') }}" alt="Icon">
                         </div>
                         <h3 class="box-title"><a href="service-details.html">Dental Care</a></h3>
                         <p class="box-text">20+ Doctors</p>
-                        <a href="service-details.html" class="th-btn btn-sm style2 theme-color">Read More</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card" data-bg-src="{{ asset("assets_portal/img/service/service_card_3.jpg") }}">
+                    <div class="service-card"
+                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
-                            <img src="{{ asset("assets_portal/img/bg/service_card_bg.png") }}" alt="Service">
+                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset("assets_portal/img/icon/service_card_3.svg") }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/service_card_3.svg') }}" alt="Icon">
                         </div>
                         <h3 class="box-title"><a href="service-details.html">Urology Care</a></h3>
                         <p class="box-text">20+ Doctors</p>
-                        <a href="service-details.html" class="th-btn btn-sm style2 theme-color">Read More</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card" data-bg-src="{{ asset("assets_portal/img/service/service_card_4.jpg") }}">
+                    <div class="service-card"
+                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
-                            <img src="{{ asset("assets_portal/img/bg/service_card_bg.png") }}" alt="Service">
+                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset("assets_portal/img/icon/service_card_4.svg") }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/service_card_4.svg') }}" alt="Icon">
                         </div>
                         <h3 class="box-title"><a href="service-details.html">Neurology Care</a></h3>
                         <p class="box-text">10+ Doctors</p>
-                        <a href="service-details.html" class="th-btn btn-sm style2 theme-color">Read More</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card" data-bg-src="{{ asset("assets_portal/img/service/service_card_5.jpg") }}">
+                    <div class="service-card"
+                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
-                            <img src="{{ asset("assets_portal/img/bg/service_card_bg.png") }}" alt="Service">
+                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset("assets_portal/img/icon/service_card_5.svg") }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/service_card_5.svg') }}" alt="Icon">
                         </div>
                         <h3 class="box-title"><a href="service-details.html">Gynecologists</a></h3>
                         <p class="box-text">30+ Doctors</p>
-                        <a href="service-details.html" class="th-btn btn-sm style2 theme-color">Read More</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card" data-bg-src="{{ asset("assets_portal/img/service/service_card_6.jpg") }}">
+                    <div class="service-card"
+                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
-                            <img src="{{ asset("assets_portal/img/bg/service_card_bg.png") }}" alt="Service">
+                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset("assets_portal/img/icon/service_card_6.svg") }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/service_card_6.svg') }}" alt="Icon">
                         </div>
                         <h3 class="box-title"><a href="service-details.html">Ophthalmology</a></h3>
                         <p class="box-text">24+ Doctors</p>
-                        <a href="service-details.html" class="th-btn btn-sm style2 theme-color">Read More</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card" data-bg-src="{{ asset("assets_portal/img/service/service_card_7.jpg") }}">
+                    <div class="service-card"
+                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
-                            <img src="{{ asset("assets_portal/img/bg/service_card_bg.png") }}" alt="Service">
+                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset("assets_portal/img/icon/service_card_7.svg") }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/service_card_7.svg') }}" alt="Icon">
                         </div>
                         <h3 class="box-title"><a href="service-details.html">Orthopedics</a></h3>
                         <p class="box-text">26+ Doctors</p>
-                        <a href="service-details.html" class="th-btn btn-sm style2 theme-color">Read More</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card" data-bg-src="{{ asset("assets_portal/img/service/service_card_8.jpg") }}">
+                    <div class="service-card"
+                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
-                            <img src="{{ asset("assets_portal/img/bg/service_card_bg.png") }}" alt="Service">
+                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset("assets_portal/img/icon/service_card_8.svg") }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/service_card_8.svg') }}" alt="Icon">
                         </div>
                         <h3 class="box-title"><a href="service-details.html">Cardiology</a></h3>
                         <p class="box-text">20+ Doctors</p>
-                        <a href="service-details.html" class="th-btn btn-sm style2 theme-color">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-5 pt-2 space-extra-bottom">
-                <p class="round-text"><span class="text">You Get Our 20+ More services... <a href="service.html"
-                            class="line-btn">Explore All Services</a></span></p>
-            </div>
-        </div>
-    </section>
-
-    <section class="overflow-hidden cta-sec4" data-bg-src="{{ asset("assets_portal/img/bg/cta_bg_4.jpg") }}">
-        <div class="container z-index-common">
-            <div class="row align-items-end justify-content-center text-center text-xl-start">
-                <div class="col-xl-7 col-lg-9 space-extra">
-                    <div class="title-area mb-32">
-                        <h2 class="sec-title text-white">We’re welcoming new patients and can’t wait to meet you!</h2>
-                        <p class="sec-text text-white">A brief statement outlining the purpose and mission of the clinic.
-                            This can include the commitment to patient care, community health, and any specific goals or
-                            values. Specify the types of medical services provided</p>
-                    </div>
-                    <div class="btn-group justify-content-center">
-                        <a href="contact.html" class="th-btn shadow-1">Book Appointment</a>
-                        <a href="contact.html" class="th-btn style2 shadow-1">Get Free Consulting</a>
-                    </div>
-                </div>
-                <div class="col-xl-5">
-                    <div class="img-box2">
-                        <img src="{{ asset("assets_portal/img/normal/cta_1.png") }}" alt="image">
                     </div>
                 </div>
             </div>
@@ -252,7 +196,8 @@
                 <div class="col-xl-6 text-center text-xl-start">
                     <div class="pe-xxl-5 mb-40 mb-xl-0">
                         <div class="title-area mb-32">
-                            <span class="sub-title"><img src="{{ asset("assets_portal/img/theme-img/title_icon.svg") }}" alt="shape">Why
+                            <span class="sub-title"><img src="{{ asset('assets_portal/img/theme-img/title_icon.svg') }}"
+                                    alt="shape">Why
                                 Choose Us</span>
                             <h2 class="sec-title">We Are Always Open For Your Health Services</h2>
                         </div>
@@ -286,7 +231,7 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="img-box3">
-                        <img src="{{ asset("assets_portal/img/normal/why_1.jpg") }}" alt="Why">
+                        <img src="{{ asset('assets_portal/img/normal/why_1.jpg') }}" alt="Why">
                     </div>
                 </div>
             </div>
@@ -328,21 +273,21 @@
         </div>
     </div>
 
-    <section class="bg-top-center space-top" id="team-sec" data-bg-src="{{ asset("assets_portal/img/bg/team_bg_1.jpg") }}">
+    <section class="bg-top-center space" id="team-sec"
+        data-bg-src="{{ asset('assets_portal/img/bg/team_bg_1.jpg') }}">
         <div class="container z-index-common">
             <div class="title-area text-center">
-                <span class="sub-title"><img src="{{ asset("assets_portal/img/theme-img/title_icon.svg") }}" alt="Icon">Expert
-                    doctors</span>
-                <h2 class="sec-title">Meet our professional Doctors</h2>
+                <span class="sub-title"><img src="{{ asset('assets_portal/img/theme-img/title_icon.svg') }}"
+                        alt="Icon">Tenaga Medis</span>
+                <h2 class="sec-title">Temui Tenaga Medis Kami</h2>
             </div>
             <div class="swiper th-slider has-shadow" id="teamSlider1"
                 data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
                 <div class="swiper-wrapper">
-                    <!-- Single Item -->
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img src="{{ asset("assets_portal/img/team/team_1_1.jpg") }}" alt="Team">
+                                <img src="{{ asset('assets_portal/img/team/team_1_1.jpg') }}" alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                     <a target="_blank" href="https://linkedin.com/"><i
@@ -359,7 +304,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img src="{{ asset("assets_portal/img/team/team_1_2.jpg") }}" alt="Team">
+                                <img src="{{ asset('assets_portal/img/team/team_1_2.jpg') }}" alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                     <a target="_blank" href="https://linkedin.com/"><i
@@ -376,7 +321,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img src="{{ asset("assets_portal/img/team/team_1_3.jpg") }}" alt="Team">
+                                <img src="{{ asset('assets_portal/img/team/team_1_3.jpg') }}" alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                     <a target="_blank" href="https://linkedin.com/"><i
@@ -393,7 +338,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img src="{{ asset("assets_portal/img/team/team_1_4.jpg") }}" alt="Team">
+                                <img src="{{ asset('assets_portal/img/team/team_1_4.jpg') }}" alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                     <a target="_blank" href="https://linkedin.com/"><i
@@ -410,7 +355,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img src="{{ asset("assets_portal/img/team/team_1_5.jpg") }}" alt="Team">
+                                <img src="{{ asset('assets_portal/img/team/team_1_5.jpg') }}" alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                     <a target="_blank" href="https://linkedin.com/"><i
@@ -427,7 +372,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img src="{{ asset("assets_portal/img/team/team_1_6.jpg") }}" alt="Team">
+                                <img src="{{ asset('assets_portal/img/team/team_1_6.jpg') }}" alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                     <a target="_blank" href="https://linkedin.com/"><i
@@ -444,7 +389,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img src="{{ asset("assets_portal/img/team/team_1_7.jpg") }}" alt="Team">
+                                <img src="{{ asset('assets_portal/img/team/team_1_7.jpg') }}" alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                     <a target="_blank" href="https://linkedin.com/"><i
@@ -461,7 +406,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img src="{{ asset("assets_portal/img/team/team_1_8.jpg") }}" alt="Team">
+                                <img src="{{ asset('assets_portal/img/team/team_1_8.jpg') }}" alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                     <a target="_blank" href="https://linkedin.com/"><i
@@ -479,82 +424,18 @@
         </div>
     </section>
 
-    <div class="overflow-hidden space">
-        <div class="container">
-            <div class="appointment-row">
-                <div class="schedule-box">
-                    <div class="shape"></div>
-                    <h3 class="box-title">Working Hours</h3>
-                    <p class="box-text">Variations of passages amt available are anything embarrassing.</p>
-                    <p class="box-timing">Monday - Tuesday: <span>9am - 6pm</span></p>
-                    <p class="box-timing">Wednesday - Thursday: <span>8am - 5pm </span></p>
-                    <p class="box-timing">Friday: <span>7am - 10pm</span></p>
-                    <p class="box-timing">Saturday: <span>10am - 7pm </span></p>
-                    <p class="box-timing">Sunday: <span>Colsed</span></p>
-                </div>
-                <div class="form-wrap">
-                    <div class="img-box4">
-                        <div class="img1">
-                            <img src="{{ asset("assets_portal/img/normal/form_1_1.jpg") }}" alt="Image">
-                        </div>
-                        <div class="img2">
-                            <img src="{{ asset("assets_portal/img/normal/form_1_2.jpg") }}" alt="Image">
-                        </div>
-                    </div>
-                    <form action="mail.php" method="POST" class="appointment-form">
-                        <h4 class="form-title">Make An Appointment</h4>
-                        <div class="row">
-                            <div class="form-group col-12">
-                                <input type="text" class="form-control" name="name" id="name"
-                                    placeholder="Your Name">
-                            </div>
-                            <div class="form-group col-12">
-                                <input type="email" class="form-control" name="email" id="email"
-                                    placeholder="Email Address">
-                            </div>
-                            <div class="form-group col-12">
-                                <input type="tel" class="form-control" name="number" id="number"
-                                    placeholder="Phone Number">
-                            </div>
-                            <div class="form-group col-12">
-                                <select name="subject" id="subject" class="form-select">
-                                    <option value="" disabled selected hidden>Choose Department</option>
-                                    <option value="Make Appointment">Make Appointment</option>
-                                    <option value="General Inquiry">General Inquiry</option>
-                                    <option value="Medicine Help">Medicine Help</option>
-                                    <option value="Consultation">Consultation</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-6">
-                                <input type="text" class="date-pick form-control" name="date" id="date-pick"
-                                    placeholder="Date">
-                            </div>
-                            <div class="form-group col-6">
-                                <input type="text" class="time-pick form-control" name="time" id="time-pick"
-                                    placeholder="Time">
-                            </div>
-                            <div class="form-btn col-12">
-                                <button class="th-btn btn-fw">BOOK AN APPOINTMENT</button>
-                            </div>
-                        </div>
-                        <p class="form-messages mb-0 mt-3"></p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="space" data-bg-src="{{ asset("assets_portal/img/bg/process_bg_1.jpg") }}">
+    <section class="space" data-bg-src="{{ asset('assets_portal/img/bg/process_bg_1.jpg') }}">
         <div class="container">
             <div class="title-area text-center">
-                <span class="sub-title"><img src="{{ asset("assets_portal/img/theme-img/title_icon.svg") }}" alt="Icon">Work Process</span>
-                <h2 class="sec-title">Let’s See How We Work Process</h2>
+                <span class="sub-title"><img src="{{ asset('assets_portal/img/theme-img/title_icon.svg') }}"
+                        alt="Icon">Alur Kerja</span>
+                <h2 class="sec-title">Mari Kita Lihat Bagaimana Proses Kerja Kami</h2>
             </div>
             <div class="process-card-wrap">
                 <div class="process-card">
                     <div class="box-img">
                         <div class="img">
-                            <img src="{{ asset("assets_portal/img/normal/process_card_1.jpg") }}" alt="icon">
+                            <img src="{{ asset('assets_portal/img/normal/process_card_1.jpg') }}" alt="icon">
                         </div>
                         <p class="box-number">01</p>
                     </div>
@@ -565,7 +446,7 @@
                 <div class="process-card">
                     <div class="box-img">
                         <div class="img">
-                            <img src="{{ asset("assets_portal/img/normal/process_card_2.jpg") }}" alt="icon">
+                            <img src="{{ asset('assets_portal/img/normal/process_card_2.jpg') }}" alt="icon">
                         </div>
                         <p class="box-number">02</p>
                     </div>
@@ -576,7 +457,7 @@
                 <div class="process-card">
                     <div class="box-img">
                         <div class="img">
-                            <img src="{{ asset("assets_portal/img/normal/process_card_3.jpg") }}" alt="icon">
+                            <img src="{{ asset('assets_portal/img/normal/process_card_3.jpg') }}" alt="icon">
                         </div>
                         <p class="box-number">03</p>
                     </div>
@@ -587,7 +468,7 @@
                 <div class="process-card">
                     <div class="box-img">
                         <div class="img">
-                            <img src="{{ asset("assets_portal/img/normal/process_card_4.jpg") }}" alt="icon">
+                            <img src="{{ asset('assets_portal/img/normal/process_card_4.jpg') }}" alt="icon">
                         </div>
                         <p class="box-number">04</p>
                     </div>
@@ -599,15 +480,16 @@
         </div>
     </section>
 
-    <div class="overflow-hidden" id="faq-sec" data-bg-src="{{ asset("assets_portal/img/bg/faq_bg_1.jpg") }}">
+    <div class="overflow-hidden" id="faq-sec" data-bg-src="{{ asset('assets_portal/img/bg/faq_bg_1.jpg') }}">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 text-center text-xl-start align-self-center">
                     <div class="pe-xl-4 space-top pt-xl-0 pb-40 pb-xl-0">
                         <div class="title-area text-center text-xl-start">
-                            <span class="sub-title"><img src="{{ asset("assets_portal/img/theme-img/title_icon_2.svg") }}"
+                            <span class="sub-title"><img
+                                    src="{{ asset('assets_portal/img/theme-img/title_icon_2.svg') }}"
                                     alt="Icon">Faqs</span>
-                            <h2 class="sec-title text-white">Frequently Asked Have <br> Any Question?</h2>
+                            <h2 class="sec-title text-white">Pertanyaan yang Sering Diajukan</h2>
                         </div>
                         <div class="accordion" id="faqAccordion">
 
@@ -667,7 +549,7 @@
                 <div class="col-xl-6">
                     <div class="ps-xxl-4">
                         <div class="faq-img1">
-                            <img src="{{ asset("assets_portal/img/normal/faq_1.png") }}" alt="faq">
+                            <img src="{{ asset('assets_portal/img/normal/faq-img-1.png') }}" alt="faq">
                         </div>
                     </div>
                 </div>
@@ -678,7 +560,8 @@
     <section class="space" id="testi-sec">
         <div class="container">
             <div class="title-area text-center">
-                <span class="sub-title"><img src="{{ asset("assets_portal/img/theme-img/title_icon.svg") }}" alt="shape">Testimonials</span>
+                <span class="sub-title"><img src="{{ asset('assets_portal/img/theme-img/title_icon.svg') }}"
+                        alt="shape">Testimonials</span>
                 <h2 class="sec-title">What Our Present Says?</h2>
             </div>
             <div class="swiper th-slider" id="testiSlide1"
@@ -692,14 +575,14 @@
                                     class="fa-sharp fa-solid fa-star"></i>
                             </div>
                             <div class="box-quote">
-                                <img src="{{ asset("assets_portal/img/icon/quote_1.svg") }}" alt="Icon">
+                                <img src="{{ asset('assets_portal/img/icon/quote_1.svg') }}" alt="Icon">
                             </div>
                             <p class="box-text">“Objectively deploy open-source web-readiness impactful bandwidth.
                                 Compellingly coordinate business deliverables rather equity invested technologies.
                                 Phosfluorescently reinvent maintainable.”</p>
                             <div class="box-profile">
                                 <div class="box-img">
-                                    <img src="{{ asset("assets_portal/img/testimonial/testi_1_1.jpg") }}" alt="Avater">
+                                    <img src="{{ asset('assets_portal/img/testimonial/testi_1_1.jpg') }}" alt="Avater">
                                 </div>
                                 <div class="box-content">
                                     <h3 class="box-title">Pelican Steve</h3>
@@ -716,14 +599,14 @@
                                     class="fa-sharp fa-solid fa-star"></i>
                             </div>
                             <div class="box-quote">
-                                <img src="{{ asset("assets_portal/img/icon/quote_1.svg") }}" alt="Icon">
+                                <img src="{{ asset('assets_portal/img/icon/quote_1.svg') }}" alt="Icon">
                             </div>
                             <p class="box-text">“Objectively deploy open-source web-readiness impactful bandwidth.
                                 Compellingly coordinate business deliverables rather equity invested technologies.
                                 Phosfluorescently reinvent maintainable.”</p>
                             <div class="box-profile">
                                 <div class="box-img">
-                                    <img src="{{ asset("assets_portal/img/testimonial/testi_1_2.jpg") }}" alt="Avater">
+                                    <img src="{{ asset('assets_portal/img/testimonial/testi_1_2.jpg') }}" alt="Avater">
                                 </div>
                                 <div class="box-content">
                                     <h3 class="box-title">Alexa Milton</h3>
@@ -740,14 +623,14 @@
                                     class="fa-sharp fa-solid fa-star"></i>
                             </div>
                             <div class="box-quote">
-                                <img src="{{ asset("assets_portal/img/icon/quote_1.svg") }}" alt="Icon">
+                                <img src="{{ asset('assets_portal/img/icon/quote_1.svg') }}" alt="Icon">
                             </div>
                             <p class="box-text">“Objectively deploy open-source web-readiness impactful bandwidth.
                                 Compellingly coordinate business deliverables rather equity invested technologies.
                                 Phosfluorescently reinvent maintainable.”</p>
                             <div class="box-profile">
                                 <div class="box-img">
-                                    <img src="{{ asset("assets_portal/img/testimonial/testi_1_1.jpg") }}" alt="Avater">
+                                    <img src="{{ asset('assets_portal/img/testimonial/testi_1_1.jpg') }}" alt="Avater">
                                 </div>
                                 <div class="box-content">
                                     <h3 class="box-title">Pelican Steve</h3>
@@ -764,14 +647,14 @@
                                     class="fa-sharp fa-solid fa-star"></i>
                             </div>
                             <div class="box-quote">
-                                <img src="{{ asset("assets_portal/img/icon/quote_1.svg") }}" alt="Icon">
+                                <img src="{{ asset('assets_portal/img/icon/quote_1.svg') }}" alt="Icon">
                             </div>
                             <p class="box-text">“Objectively deploy open-source web-readiness impactful bandwidth.
                                 Compellingly coordinate business deliverables rather equity invested technologies.
                                 Phosfluorescently reinvent maintainable.”</p>
                             <div class="box-profile">
                                 <div class="box-img">
-                                    <img src="{{ asset("assets_portal/img/testimonial/testi_1_2.jpg") }}" alt="Avater">
+                                    <img src="{{ asset('assets_portal/img/testimonial/testi_1_2.jpg') }}" alt="Avater">
                                 </div>
                                 <div class="box-content">
                                     <h3 class="box-title">Alexa Milton</h3>
@@ -786,19 +669,19 @@
         </div>
     </section>
 
-    <section class="space" id="blog-sec" data-bg-src="{{ asset("assets_portal/img/bg/blog_bg_1.jpg") }}">
+    <section class="space" id="blog-sec" data-bg-src="{{ asset('assets_portal/img/bg/blog_bg_1.jpg') }}">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
                 <div class="col-lg">
                     <div class="title-area text-center text-lg-start">
-                        <span class="sub-title"><img src="{{ asset("assets_portal/img/theme-img/title_icon.svg") }}" alt="shape">Our
-                            Blog</span>
-                        <h2 class="sec-title">Our Latest News & Blogs</h2>
+                        <span class="sub-title"><img src="{{ asset('assets_portal/img/theme-img/title_icon.svg') }}"
+                                alt="shape">Artikel</span>
+                        <h2 class="sec-title">Artikel Kesehatan</h2>
                     </div>
                 </div>
                 <div class="col-lg-auto d-none d-lg-block">
                     <div class="sec-btn">
-                        <a href="blog.html" class="th-btn style4">View All Post</a>
+                        <a href="{{ url('/artikel') }}" class="th-btn style4">Lihat Semua</a>
                     </div>
                 </div>
             </div>
@@ -809,7 +692,7 @@
                         <div class="swiper-slide">
                             <div class="blog-card">
                                 <div class="blog-img">
-                                    <img src="{{ asset("assets_portal/img/blog/blog_1_1.jpg") }}" alt="blog image">
+                                    <img src="{{ asset('assets_portal/img/blog/blog_1_1.jpg') }}" alt="blog image">
                                 </div>
                                 <div class="blog-content">
                                     <div class="blog-meta">
@@ -826,7 +709,7 @@
                         <div class="swiper-slide">
                             <div class="blog-card">
                                 <div class="blog-img">
-                                    <img src="{{ asset("assets_portal/img/blog/blog_1_2.jpg") }}" alt="blog image">
+                                    <img src="{{ asset('assets_portal/img/blog/blog_1_2.jpg') }}" alt="blog image">
                                 </div>
                                 <div class="blog-content">
                                     <div class="blog-meta">
@@ -843,7 +726,7 @@
                         <div class="swiper-slide">
                             <div class="blog-card">
                                 <div class="blog-img">
-                                    <img src="{{ asset("assets_portal/img/blog/blog_1_3.jpg") }}" alt="blog image">
+                                    <img src="{{ asset('assets_portal/img/blog/blog_1_3.jpg') }}" alt="blog image">
                                 </div>
                                 <div class="blog-content">
                                     <div class="blog-meta">
@@ -860,7 +743,7 @@
                         <div class="swiper-slide">
                             <div class="blog-card">
                                 <div class="blog-img">
-                                    <img src="{{ asset("assets_portal/img/blog/blog_1_4.jpg") }}" alt="blog image">
+                                    <img src="{{ asset('assets_portal/img/blog/blog_1_4.jpg') }}" alt="blog image">
                                 </div>
                                 <div class="blog-content">
                                     <div class="blog-meta">
@@ -877,7 +760,7 @@
                         <div class="swiper-slide">
                             <div class="blog-card">
                                 <div class="blog-img">
-                                    <img src="{{ asset("assets_portal/img/blog/blog_1_1.jpg") }}" alt="blog image">
+                                    <img src="{{ asset('assets_portal/img/blog/blog_1_1.jpg') }}" alt="blog image">
                                 </div>
                                 <div class="blog-content">
                                     <div class="blog-meta">
@@ -894,7 +777,7 @@
                         <div class="swiper-slide">
                             <div class="blog-card">
                                 <div class="blog-img">
-                                    <img src="{{ asset("assets_portal/img/blog/blog_1_2.jpg") }}" alt="blog image">
+                                    <img src="{{ asset('assets_portal/img/blog/blog_1_2.jpg') }}" alt="blog image">
                                 </div>
                                 <div class="blog-content">
                                     <div class="blog-meta">

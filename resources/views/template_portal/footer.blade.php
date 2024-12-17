@@ -1,17 +1,4 @@
 <footer class="footer-wrapper footer-layout1" data-bg-src="{{ asset("assets_portal/img/bg/footer_bg_1.jpg") }}">
-    <div class="container z-index-common">
-        <div class="newsletter-wrap">
-            <div class="newsletter-content">
-                <h2 class="sec-title">Subscribe for newsletter</h2>
-            </div>
-            <form class="newsletter-form">
-                <div class="form-group">
-                    <input class="form-control" type="email" placeholder="Email Address" required="">
-                </div>
-                <button type="submit" class="th-btn shadow-1">Subscribe</button>
-            </form>
-        </div>
-    </div>
     <div class="widget-area">
         <div class="container">
             <div class="row justify-content-between">
