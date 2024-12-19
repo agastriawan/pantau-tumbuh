@@ -138,7 +138,7 @@
                             </div>
                             <a href="{{ url('/') }}"><img width="202px" height="62px"
                                     style="margin-top:-5px;" src="{{ asset('assets_portal/img/logo-2.png') }}"
-                                    alt="Mediax"></a>
+                                    alt="Pantau Tumbuh"></a>
                         </div>
                     </div>
                     <div class="col-auto d-none d-lg-inline-block">
@@ -159,7 +159,7 @@
                     </div>
                     <div class="col-auto">
                         <div class="header-button">
-                            <a href="appointment.html" class="th-btn" id="btn-daftar">Masuk</a>
+                            <a href="{{ url('/login') }}" class="th-btn" id="btn-daftar">Masuk</a>
                             <button type="button" class="icon-btn sideMenuInfo d-none d-xl-inline-block"><i
                                     class="far fa-bars"></i></button>
                             <button type="button" class="th-menu-toggle d-block d-lg-none"><i

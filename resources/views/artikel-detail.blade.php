@@ -22,7 +22,7 @@
                 <div class="col-xxl-12 col-lg-12">
                     <div class="th-blog blog-single">
                         <div class="blog-img">
-                            <img width="100%" src="{{ asset("assets_portal/img/blog/blog-s-1-1.jpg") }}" alt="Blog Image">
+                            <img width="100%" src="{{ asset('assets_portal/img/blog/blog-s-1-1.jpg') }}" alt="Blog Image">
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
@@ -31,8 +31,12 @@
                                 <a href="blog-details.html"><i class="fal fa-comments"></i>Comments (3)</a>
                             </div>
                             <h2 class="blog-title">How Business Is Taking Over & What to Do About It</h2>
-                            <p>We offer flexible appointment scheduling options to accommodate your busy lifestyle. Whether you prefer to book in advance or need a same-day appointment, we strive to make the process as seamless as possible.</p>
-                            <p>Especially in light of the ongoing COVID-19 pandemic, we maintain rigorous safety protocols and hygiene standards to ensure the well-being of our patients and staff. Your health and safety are our utmost priority.</p>
+                            <p>We offer flexible appointment scheduling options to accommodate your busy lifestyle. Whether
+                                you prefer to book in advance or need a same-day appointment, we strive to make the process
+                                as seamless as possible.</p>
+                            <p>Especially in light of the ongoing COVID-19 pandemic, we maintain rigorous safety protocols
+                                and hygiene standards to ensure the well-being of our patients and staff. Your health and
+                                safety are our utmost priority.</p>
 
                             <div class="share-links clearfix ">
                                 <div class="row justify-content-between">
@@ -46,10 +50,14 @@
                                     <div class="col-sm-auto text-xl-end">
                                         <span class="share-links-title">Share:</span>
                                         <div class="th-social">
-                                            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                                            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://facebook.com/" target="_blank"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a href="https://twitter.com/" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="https://linkedin.com/" target="_blank"><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                            <a href="https://instagram.com/" target="_blank"><i
+                                                    class="fab fa-instagram"></i></a>
                                         </div><!-- End Social Share -->
                                     </div><!-- Share Links Area end -->
                                 </div>
@@ -60,7 +68,6 @@
             </div>
         </div>
     </section>
-
 @endsection
 
 @section('template_scripts')

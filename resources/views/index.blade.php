@@ -14,7 +14,7 @@
                     </h1>
                     <p class="hero-text">Bersama kita jaga pertumbuhan anak sesuai standar kesehatan. Solusi praktis untuk pemantauan dan edukasi gizi anak.</p>
                     <div class="btn-group justify-content-center">
-                        <a href="about.html" class="th-btn">Pantau Kesehatan Anak Disini</a>
+                        <a href="{{ url('/login') }}" class="th-btn">Pantau Kesehatan Anak Disini</a>
                     </div>
                 </div>
             </div>
