@@ -27,3 +27,4 @@
 <link rel="stylesheet" href="{{ asset("assets_portal/css/swiper-bundle.min.css") }}">
 <link rel="stylesheet" href="{{ asset("assets_portal/css/jquery.datetimepicker.min.css") }}">
 <link rel="stylesheet" href="{{ asset("assets_portal/css/style.css") }}">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">

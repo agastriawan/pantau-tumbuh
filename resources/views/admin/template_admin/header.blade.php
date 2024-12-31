@@ -20,10 +20,12 @@
                 </li>
 
                 <li class="dropdown notification-list topbar-dropdown">
-                    <a class="nav-link dropdown-toggle nav-user me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                        <img src="{{ asset("assets_portal/img/team/team_1.jpeg") }}" alt="user-image" class="rounded-circle">
+                    <a class="nav-link dropdown-toggle nav-user me-0" data-bs-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="{{ asset('assets_portal/img/team/team_1.jpeg') }}" alt="user-image"
+                            class="rounded-circle">
                         <span class="pro-user-name ms-1">
-                            Abror Pratama <i class="mdi mdi-chevron-down"></i> 
+                            Abror Pratama <i class="mdi mdi-chevron-down"></i>
                         </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
@@ -34,10 +36,13 @@
 
                         <div class="dropdown-divider"></div>
 
-                        <a href="auth-logout.html" class="dropdown-item notify-item">
-                            <i class="mdi mdi-location-exit fs-16 align-middle"></i>
-                            <span>Logout</span>
-                        </a>
+                        <form action="{{ url('auth/_logout') }}" method="POST" style="display: inline;">
+                            @csrf
+                            <button type="submit" class="dropdown-item notify-item">
+                                <i class="mdi mdi-location-exit fs-16 align-middle"></i>
+                                <span>Logout</span>
+                            </button>
+                        </form>
 
                     </div>
                 </li>
