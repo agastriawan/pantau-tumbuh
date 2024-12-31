@@ -8,7 +8,7 @@
                     </button>
                 </li>
                 <li class="d-none d-lg-block">
-                    <h5 class="mb-0">Selamat Malam, Abror Pratama</h5>
+                    <h5 class="mb-0">Halo, {{ Auth::user()->nama }}</h5>
                 </li>
             </ul>
 
@@ -25,7 +25,7 @@
                         <img src="{{ asset('assets_portal/img/team/team_1.jpeg') }}" alt="user-image"
                             class="rounded-circle">
                         <span class="pro-user-name ms-1">
-                            Abror Pratama <i class="mdi mdi-chevron-down"></i>
+                            {{ Auth::user()->nama }} <i class="mdi mdi-chevron-down"></i>
                         </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end profile-dropdown ">

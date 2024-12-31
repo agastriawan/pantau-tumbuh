@@ -33,6 +33,13 @@
                 <li class="menu-title mt-2">Orang Tua</li>
     
                 <li>
+                    <a href="{{ url('/orangtua/anak') }}" class="tp-link">
+                        <i data-feather="user-plus"></i>
+                        <span> Anak </span>
+                    </a>
+                </li>
+
+                <li>
                     <a href="{{ url('/orangtua/monitoring') }}" class="tp-link">
                         <i data-feather="columns"></i>
                         <span> Monitoring </span>
