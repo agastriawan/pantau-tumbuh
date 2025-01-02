@@ -44,6 +44,7 @@ class MonitoringController extends Controller
             return [
                 'id' => $item->id,
                 'nama_anak' => $item->anak->nama ?? '-',
+                'status' => $item->status,
                 'created_at' => $item->created_at,
             ];
         });

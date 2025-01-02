@@ -30,6 +30,7 @@
                     </a>
                 </li>
 
+                @if (Auth::user()->role->id == 1 ) 
                 <li class="menu-title mt-2">Orang Tua</li>
     
                 <li>
@@ -40,27 +41,30 @@
                 </li>
 
                 <li>
-                    <a href="{{ url('/orangtua/monitoring') }}" class="tp-link">
+                    <a href="{{ url('/monitoring') }}" class="tp-link">
                         <i data-feather="columns"></i>
                         <span> Monitoring </span>
                     </a>
                 </li>
+                @endif
 
-                <li>
+                {{-- <li>
                     <a href="apps-contacts.html" class="tp-link">
                         <i data-feather="book"></i>
                         <span> Feedback </span>
                     </a>
-                </li>
+                </li> --}}
 
+                @if (Auth::user()->role->id == 2 ) 
                 <li class="menu-title mt-2">Tenaga Medis</li>
 
                 <li>
-                    <a href="apps-todolist.html" class="tp-link">
+                    <a href="{{ url('/monitoring') }}" class="tp-link">
                         <i data-feather="columns"></i>
                         <span> Monitoring </span>
                     </a>
                 </li>
+                @endif
 
                 <li class="menu-title mt-2">Administrator</li>
 

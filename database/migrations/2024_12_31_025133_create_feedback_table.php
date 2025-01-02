@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('rekaman_monitoring_id')->constrained('rekaman_monitoring')->onDelete('cascade'); // Relasi ke tabel `rekaman_monitoring`
             $table->text('isi_feedback')->nullable(); 
             $table->string('surat_rujukan')->nullable(); 
+            $table->string('modul_kesehatan')->nullable(); 
             $table->timestamps();
         });
     }

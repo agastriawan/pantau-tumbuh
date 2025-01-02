@@ -95,10 +95,10 @@
                         orderable: false,
                         render: function(data, type, row, meta) {
                             var deleteLink =
-                                `<a href="#" class="btn btn-danger btn-sm delete-btn" data-id="${data}"><i class="fas fa-trash"></i></a>`;
+                                `<a href="#" class="ms-2 btn btn-danger btn-sm delete-btn" data-id="${data}"><i class="fas fa-trash"></i></a>`;
                             var editLink =
                                 `<a href="{{ url('orangtua/anak/edit_anak') }}/${data}" class="ms-2 btn btn-primary btn-sm edit-btn"><i class="far fa-edit"></i></a>`;
-                            return deleteLink + ' ' + editLink;
+                            return editLink + ' ' + deleteLink;
                         }
                     }
                 ]

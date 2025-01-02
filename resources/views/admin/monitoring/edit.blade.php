@@ -78,7 +78,7 @@
                                 </div>
                             </div>
                             <div class="text-end">
-                                <a href="{{ url('/orangtua/monitoring') }}"><button class="btn btn-info"
+                                <a href="{{ url('/monitoring') }}"><button class="btn btn-info"
                                         type="button">Kembali</button></a>
                                 <button type="submit" class="btn btn-primary btn-submit"> Kirim</button>
                             </div>
@@ -106,7 +106,7 @@
             formData.append('pertanyaan_orang_tua', $('#editor').summernote('code'))
 
             $.ajax({
-                url: `{{ url('orangtua/monitoring/_edit_monitoring') }}`,
+                url: `{{ url('monitoring/_edit_monitoring') }}`,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -136,7 +136,7 @@
                                 confirmButton: 'btn btn-primary',
                             },
                         }).then(() => {
-                            window.location.href = `{{ url('orangtua/monitoring') }}`;
+                            window.location.href = `{{ url('monitoring') }}`;
                         });
                     } else {
                         Swal.fire({

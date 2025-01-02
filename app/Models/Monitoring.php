@@ -15,9 +15,9 @@ class Monitoring extends Model
         'kondisi_kesehatan',
         'status_imunisasi',
         'pertanyaan_orang_tua',
+        'status',
     ];
 
-    // Monitoring.php
     public function anak()
     {
         return $this->belongsTo(Anak::class, 'anak_id');

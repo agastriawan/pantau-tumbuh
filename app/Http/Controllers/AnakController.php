@@ -140,8 +140,6 @@ class AnakController extends Controller
                 $fotoNameWithPrefix = $anak->foto;
             }
 
-            // dd($fotoNameWithPrefix);
-    
             $anak->update([
                 'nama' => $request->nama,
                 'tanggal_lahir' => $tanggalLahir,

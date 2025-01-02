@@ -24,8 +24,8 @@
                 <div class="card">
                     <div class="card-header d-flex align-items-center justify-content-between">
                         <h5 class="card-title mb-0">Daftar Monitoring</h5>
-                        <a href="{{ url('/orangtua/monitoring/tambah_monitoring') }}"><button type="submit"
-                                class="btn btn-primary">Tambah</button></a>
+                        <a href="{{ url('monitoring/tambah_monitoring') }}"><button type="submit"
+                                class="btn btn-primary {{ Auth::user()->role->id == 2 ? 'd-none' : '' }}">Tambah</button></a>
                     </div>
 
                     <div class="card-body">
@@ -33,8 +33,9 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama Anak</th>
+                                    <th>Nama Monitoring</th>
                                     <th>Tanggal Monitoring</th>
+                                    <th class="text-center">Status</th>
                                     <th class="text-center">Aksi</th>
                                 </tr>
                             </thead>
@@ -53,7 +54,7 @@
                 processing: true,
                 serverSide: false,
                 ajax: {
-                    url: "{{ url('orangtua/monitoring/_list_monitoring') }}",
+                    url: "{{ url('monitoring/_list_monitoring') }}",
                     type: 'POST',
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
@@ -86,15 +87,35 @@
                         }
                     },
                     {
+                        data: 'status',
+                        className: "text-center",
+                        render: function(data, type, row, meta) {
+                            if (data === 'Diproses') {
+                                return `<span class="badge bg-warning-subtle text-warning fw-semibold">${data}</span>`;
+                            } else if (data === 'Selesai') {
+                                return `<span class="badge bg-info-subtle text-info fw-semibold">${data}</span>`;
+                            } else {
+                                return `-`;
+                            }
+                        }
+                    },
+                    {
                         data: "id",
                         className: "text-center",
                         orderable: false,
                         render: function(data, type, row, meta) {
                             var deleteLink =
-                                `<a href="#" class="btn btn-danger btn-sm delete-btn" data-id="${data}"><i class="fas fa-trash"></i></a>`;
+                                `<a href="#" class="ms-2 btn btn-danger btn-sm delete-btn" data-id="${data}"><i class="fas fa-trash"></i></a>`;
                             var editLink =
-                                `<a href="{{ url('orangtua/monitoring/edit_monitoring') }}/${data}" class="ms-2 btn btn-primary btn-sm edit-btn"><i class="far fa-edit"></i></a>`;
-                            return deleteLink + ' ' + editLink;
+                                `<a href="{{ url('monitoring/edit_monitoring') }}/${data}" class="ms-2 btn btn-primary btn-sm edit-btn"><i class="far fa-edit"></i></a>`;
+                            var feedbackLink =
+                                `<a href="{{ url('monitoring/feedback') }}/${data}" class="ms-2 btn btn-info btn-sm edit-btn"><i class="fas fa-comment-medical"></i></a>`;
+
+                            if ("{{ Auth::user()->role->id }}" == 2) {
+                                return feedbackLink;
+                            } else {
+                                return feedbackLink + ' ' + editLink + ' ' + deleteLink;
+                            }
                         }
                     }
                 ]
@@ -117,7 +138,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: `{{ url('orangtua/monitoring/_delete_monitoring/') }}/${Id}`,
+                        url: `{{ url('monitoring/_delete_monitoring/') }}/${Id}`,
                         type: 'DELETE',
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

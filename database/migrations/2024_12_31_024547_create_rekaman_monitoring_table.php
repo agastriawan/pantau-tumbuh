@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('kondisi_kesehatan')->nullable();
             $table->enum('status_imunisasi', ['Lengkap', 'Tidak Lengkap', 'Belum Imunisasi'])->nullable();
             $table->text('pertanyaan_orang_tua')->nullable();
+            $table->string('status')->default('Diproses');
             $table->timestamps();
         });
     }

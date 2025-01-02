@@ -7,7 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Pantau Tumbuh</title>
-    @include('admin/template_admin/styles')
+
+    <link href="{{ asset('assets_admin/css/app.min.css') }}" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="{{ asset('assets_admin/css/icons.min.css') }}" rel="stylesheet" type="text/css" />  
+    <link href="{{ asset('assets_admin/libs/flatpickr/flatpickr.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
     <style>
         body {
             margin-top: 1.2rem !important;
@@ -62,7 +67,6 @@
             cursor: pointer;
         }
     </style>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-primary-subtle">
@@ -151,8 +155,19 @@
         </div>
     </div>
 
-    @include('admin/template_admin/scripts')
-    {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
+    <script src="{{ asset('assets_admin/libs/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets_admin/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets_admin/libs/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets_admin/libs/node-waves/waves.min.js') }}"></script>
+    <script src="{{ asset('assets_admin/libs/waypoints/lib/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('assets_admin/libs/jquery.counterup/jquery.counterup.min.js') }}"></script>
+    <script src="{{ asset('assets_admin/libs/feather-icons/feather.min.js') }}"></script>
+    <script src="{{ asset('assets_admin/libs/apexcharts/apexcharts.min.js') }}"></script>
+    <script src="https://apexcharts.com/samples/assets/stock-prices.js"></script>
+    <script src="{{ asset('assets_admin/js/pages/ecommerce-dashboard.init.js') }}"></script>
+    <script src="{{ asset('assets_admin/js/app.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{{ asset('assets_admin/libs/flatpickr/flatpickr.min.js') }}"></script>
 
     <script>
         $('#loginForm').on('submit', function(e) {

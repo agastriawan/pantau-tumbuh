@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
-
+                    
                     <div class="card-header">
                         <h5 class="card-title mb-0">Monitoring Kesehatan Anak</h5>
                     </div>
@@ -74,7 +74,7 @@
                                 </div>
                             </div>
                             <div class="text-end">
-                                <a href="{{ url('/orangtua/monitoring') }}"><button class="btn btn-info"
+                                <a href="{{ url('/monitoring') }}"><button class="btn btn-info"
                                         type="button">Kembali</button></a>
                                 <button type="submit" class="btn btn-primary btn-submit"> Kirim</button>
                             </div>
@@ -101,7 +101,7 @@
             formData.append('pertanyaan_orang_tua', $('#editor').summernote('code'))
 
             $.ajax({
-                url: `{{ url('orangtua/monitoring/_tambah_monitoring') }}`,
+                url: `{{ url('monitoring/_tambah_monitoring') }}`,
                 type: 'POST',
                 data: formData,
                 contentType: false,
@@ -131,7 +131,7 @@
                                 confirmButton: 'btn btn-primary',
                             },
                         }).then(() => {
-                            window.location.href = `{{ url('orangtua/monitoring') }}`;
+                            window.location.href = `{{ url('monitoring') }}`;
                         });
                     } else {
                         Swal.fire({
