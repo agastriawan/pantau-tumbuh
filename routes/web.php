@@ -6,7 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AnakController;
 use App\Http\Controllers\MonitoringController;
 use App\Http\Controllers\FeedbackController;
-use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+use App\Http\Controllers\UsermanagementController;
 
 Route::prefix('auth')->group(function () {
     Route::get('login', [AuthController::class, 'login'])->name('login');
@@ -46,6 +46,16 @@ Route::prefix('monitoring')->middleware('auth')->group(function () {
     });
 });
 
+Route::prefix('usermanagement')->middleware('auth')->group(function () {
+    Route::get('', [UsermanagementController::class, 'usermanagement'])->name('usermanagement');
+    Route::get('tambah_user', [UsermanagementController::class, 'tambah_user'])->name('tambah_user');
+    Route::get('edit_user/{id}', [UsermanagementController::class, 'edit_user'])->name('edit_user');
+    Route::post('_tambah_user', [UsermanagementController::class, '_tambah_user'])->name('_tambah_user');
+    Route::post('_list_user', [UsermanagementController::class, '_list_user'])->name('_list_user');
+    Route::post('_edit_user', [UsermanagementController::class, '_edit_user'])->name('_edit_user');
+    Route::delete('_delete_user/{id}', [UsermanagementController::class, '_delete_user'])->name('_delete_user');
+});
+
 
 Route::get('/', function () {
     return view('index');
@@ -69,10 +79,6 @@ Route::get('/artikel-detail', function () {
 Route::get('/profile', function () {
     return view('admin/profile');
 });
-
-// Route::get('/orangtua/monitoring', function () {
-//     return view('admin/orangtua/list');
-// });
 
 Route::get('/orangtua/monitoring/add', function () {
     return view('admin/orangtua/add');

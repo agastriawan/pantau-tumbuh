@@ -69,7 +69,7 @@ class AnakController extends Controller
         try {
             $tanggalLahir = Carbon::createFromFormat('d-m-Y', $request->tanggal_lahir)->format('Y-m-d');
 
-            $encryptedName = Hash::make($request->nama . $request->tanggal_lahir);
+            $encryptedName = md5($request->nama . $request->tanggal_lahir);
             $fotoName = substr($encryptedName, 0, 40); 
             $fotoExtension = $request->file('foto')->getClientOriginalExtension();
             $fotoNameWithPrefix = time() . '_' . $fotoName; 
@@ -129,7 +129,7 @@ class AnakController extends Controller
                 }
     
                 $foto = $request->file('foto');
-                $encryptedName = Hash::make($request->nama . $request->tanggal_lahir);
+                $encryptedName = md5($request->nama . $request->tanggal_lahir);
                 $fotoName = substr($encryptedName, 0, 40); 
                 $fotoExtension = $foto->getClientOriginalExtension();
                 $fotoNameWithPrefix = time() . '_' . $fotoName; 

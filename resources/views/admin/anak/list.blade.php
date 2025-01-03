@@ -139,10 +139,9 @@
                             $('#anakTable').DataTable().ajax.reload();
                         },
                         error: function(error) {
-                            console.error('Gagal menghapus data:', error);
                             Swal.fire({
                                 title: 'Gagal!',
-                                text: 'Data gagal dihapus Karena Id Pembina Sudah digunakan di umkm',
+                                text: 'Data gagal dihapus',
                                 icon: 'error',
                                 confirmButtonText: 'OK',
                                 customClass: {

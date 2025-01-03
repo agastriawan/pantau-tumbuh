@@ -48,13 +48,6 @@
                 </li>
                 @endif
 
-                {{-- <li>
-                    <a href="apps-contacts.html" class="tp-link">
-                        <i data-feather="book"></i>
-                        <span> Feedback </span>
-                    </a>
-                </li> --}}
-
                 @if (Auth::user()->role->id == 2 ) 
                 <li class="menu-title mt-2">Tenaga Medis</li>
 
@@ -69,7 +62,7 @@
                 <li class="menu-title mt-2">Administrator</li>
 
                 <li>
-                    <a href="apps-contacts.html" class="tp-link">
+                    <a href="{{ url('/usermanagement') }}" class="tp-link">
                         <i data-feather="users"></i>
                         <span> User Management </span>
                     </a>

@@ -8,13 +8,13 @@
 
         <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
             <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">Monitoring</h4>
+                <h4 class="fs-18 fw-semibold m-0">User Management</h4>
             </div>
 
             <div class="text-end">
                 <ol class="breadcrumb m-0 py-0">
                     <li class="breadcrumb-item"><a href="javascript: void(0);">Admin</a></li>
-                    <li class="breadcrumb-item active">Daftar Monitoring</li>
+                    <li class="breadcrumb-item active">Daftar User</li>
                 </ol>
             </div>
         </div>
@@ -23,23 +23,22 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                        <h5 class="card-title mb-0">Daftar Monitoring</h5>
+                        <h5 class="card-title mb-0">Daftar User</h5>
                         <div class="button">
-                            <a href="{{ url('monitoring/_export') }}" class="me-2"><button type="submit"
-                                    class="btn btn-info">Export</button></a>
-                            <a href="{{ url('monitoring/tambah_monitoring') }}"><button type="submit"
-                                    class="btn btn-primary {{ Auth::user()->role->id == 2 ? 'd-none' : '' }}">Tambah</button></a>
+                            <a href="{{ url('usermanagement/tambah_user') }}"><button type="submit"
+                                    class="btn btn-primary">Tambah</button></a>
                         </div>
                     </div>
 
                     <div class="card-body">
-                        <table id="monitoringTable" class="table table-bordered table-bordered dt-responsive nowrap">
+                        <table id="userTable" class="table table-bordered table-bordered dt-responsive nowrap">
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama Monitoring</th>
-                                    <th>Tanggal Monitoring</th>
-                                    <th class="text-center">Status</th>
+                                    <th>Nama</th>
+                                    <th>Email</th>
+                                    <th>No Telp</th>
+                                    <th class="text-center">Role</th>
                                     <th class="text-center">Aksi</th>
                                 </tr>
                             </thead>
@@ -54,11 +53,11 @@
 @section('template_scripts_admin')
     <script>
         $(document).ready(function() {
-            $('#monitoringTable').DataTable({
+            $('#userTable').DataTable({
                 processing: true,
                 serverSide: false,
                 ajax: {
-                    url: "{{ url('monitoring/_list_monitoring') }}",
+                    url: "{{ url('usermanagement/_list_user') }}",
                     type: 'POST',
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
@@ -73,31 +72,24 @@
                         }
                     },
                     {
-                        data: 'nama_anak',
+                        data: 'nama',
                     },
                     {
-                        data: 'created_at',
-                        render: function(data, type, row) {
-                            if (data) {
-                                var date = new Date(data);
-                                var day = ('0' + date.getDate()).slice(-
-                                    2);
-                                var month = ('0' + (date.getMonth() + 1)).slice(-
-                                    2);
-                                var year = date.getFullYear();
-                                return day + '-' + month + '-' + year;
-                            }
-                            return data;
-                        }
+                        data: 'email',
                     },
                     {
-                        data: 'status',
+                        data: 'notelp',
+                    },
+                    {
+                        data: 'role',
                         className: "text-center",
                         render: function(data, type, row, meta) {
-                            if (data === 'Diproses') {
+                            if (data === 'Orang Tua') {
                                 return `<span class="badge bg-warning-subtle text-warning fw-semibold">${data}</span>`;
-                            } else if (data === 'Selesai') {
+                            } else if (data === 'Tenaga Medis') {
                                 return `<span class="badge bg-info-subtle text-info fw-semibold">${data}</span>`;
+                            } else if (data === 'Administrator') {
+                                return `<span class="badge bg-secondary-subtle text-secondary fw-semibold">${data}</span>`;
                             } else {
                                 return `-`;
                             }
@@ -111,22 +103,16 @@
                             var deleteLink =
                                 `<a href="#" class="ms-2 btn btn-danger btn-sm delete-btn" data-id="${data}"><i class="fas fa-trash"></i></a>`;
                             var editLink =
-                                `<a href="{{ url('monitoring/edit_monitoring') }}/${data}" class="ms-2 btn btn-primary btn-sm edit-btn"><i class="far fa-edit"></i></a>`;
-                            var feedbackLink =
-                                `<a href="{{ url('monitoring/feedback') }}/${data}" class="ms-2 btn btn-info btn-sm edit-btn"><i class="fas fa-comment-medical"></i></a>`;
+                                `<a href="{{ url('usermanagement/edit_user') }}/${data}" class="ms-2 btn btn-primary btn-sm edit-btn"><i class="far fa-edit"></i></a>`;
 
-                            if ("{{ Auth::user()->role->id }}" == 2) {
-                                return feedbackLink;
-                            } else {
-                                return feedbackLink + ' ' + editLink + ' ' + deleteLink;
-                            }
+                            return editLink + ' ' + deleteLink;
                         }
                     }
                 ]
             });
         });
 
-        $('#monitoringTable').on('click', '.delete-btn', function(e) {
+        $('#userTable').on('click', '.delete-btn', function(e) {
             e.preventDefault();
             var Id = $(this).data('id');
             Swal.fire({
@@ -142,7 +128,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: `{{ url('monitoring/_delete_monitoring/') }}/${Id}`,
+                        url: `{{ url('usermanagement/_delete_user/') }}/${Id}`,
                         type: 'DELETE',
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -157,7 +143,7 @@
                                     confirmButton: 'btn btn-primary',
                                 },
                             });
-                            $('#monitoringTable').DataTable().ajax.reload();
+                            $('#userTable').DataTable().ajax.reload();
                         },
                         error: function(error) {
                             Swal.fire({

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('notelp');
             $table->string('password');
             $table->string('alamat');
-            $table->string('image')->nullable();
+            $table->string('foto')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

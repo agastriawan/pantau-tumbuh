@@ -30,6 +30,7 @@ class AuthController extends Controller
             'password.required' => 'Password wajib diisi.',
             'password.min' => 'Password harus memiliki minimal 8 karakter.',
             'password.confirmed' => 'Konfirmasi password tidak cocok.',
+            'password_confirmation.required' => 'Konfirmasi Password wajib diisi.',
             'notelp.required' => 'Nomor telepon wajib diisi.',
             'alamat.required' => 'Alamat wajib diisi.',
         ];

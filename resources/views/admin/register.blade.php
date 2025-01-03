@@ -135,7 +135,7 @@
                                                         <div class="form-group mb-3">
                                                             <div class="form-group mb-3">
                                                                 <label for="password_confirmation"
-                                                                    class="form-label">Password</label>
+                                                                    class="form-label">Konfirmasi Password</label>
                                                                 <div class="input-group">
                                                                     <input class="form-control" type="password"
                                                                         id="password_confirmation"
