@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Anak;
 use App\Models\Monitoring;
+use App\Exports\MonitoringExport;
+use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -25,21 +27,44 @@ class MonitoringController extends Controller
 
     public function edit_monitoring($id)
     {
-        $monitoring = Monitoring::findOrFail($id); 
+        $monitoring = Monitoring::findOrFail($id);
         $anak = Anak::select('id', 'nama')->get();
-    
+
         $data = [
             "monitoring" => $monitoring,
             "anak" => $anak
         ];
-    
-        return view('admin/monitoring/edit', $data); 
+
+        return view('admin/monitoring/edit', $data);
     }
 
-    public function _list_monitoring(Request $request)
+    public function _export()
+    {
+        $monitoring = Monitoring::with('anak:id,nama,jenis_kelamin')->get();
+
+        $data = $monitoring->map(function ($item) {
+            return [
+                'id' => $item->id,
+                'nama_anak' => $item->anak->nama ?? '-',
+                'jenis_kelamin' => $item->anak->jenis_kelamin,
+                'status' => $item->status,
+                'berat_badan' => $item->berat_badan,
+                'tinggi_badan' => $item->tinggi_badan,
+                'lingkar_kepala' => $item->lingkar_kepala,
+                'kondisi_kesehatan' => $item->kondisi_kesehatan,
+                'status_imunisasi' => $item->status_imunisasi,
+                'created_at' => $item->created_at,
+                'updated_at' => $item->updated_at,
+            ];
+        });
+
+        return Excel::download(new MonitoringExport($data), 'Monitoring Kesehatan Anak.xlsx');
+    }
+
+    public function _list_monitoring()
     {
         $monitoring = Monitoring::with('anak:id,nama')->get();
-    
+
         $data = $monitoring->map(function ($item) {
             return [
                 'id' => $item->id,
@@ -48,11 +73,11 @@ class MonitoringController extends Controller
                 'created_at' => $item->created_at,
             ];
         });
-    
+
         return response()->json([
             'data' => $data
         ]);
-    }    
+    }
 
     public function _tambah_monitoring(Request $request)
     {
@@ -95,6 +120,7 @@ class MonitoringController extends Controller
                 'kondisi_kesehatan' => $request->kondisi_kesehatan,
                 'status_imunisasi' => $request->status_imunisasi,
                 'pertanyaan_orang_tua' => $request->pertanyaan_orang_tua,
+                'created_at' => now()
             ]);
 
             return response()->json([
@@ -123,7 +149,7 @@ class MonitoringController extends Controller
             'status_imunisasi.required' => 'Status imunisasi wajib diisi.',
             'pertanyaan_orang_tua.required' => 'Pertanyaan orang tua wajib diisi.',
         ];
-    
+
         $validator = Validator::make($request->all(), [
             'anak_id' => 'required|exists:anak,id',
             'berat_badan' => 'required|numeric',
@@ -133,24 +159,24 @@ class MonitoringController extends Controller
             'status_imunisasi' => 'required|string',
             'pertanyaan_orang_tua' => 'required|string',
         ], $messages);
-    
+
         if ($validator->fails()) {
             return response()->json([
                 'status' => 'error',
                 'errors' => $validator->errors()
             ], 422);
         }
-    
+
         try {
             $monitoring = Monitoring::find($request->id);
-    
+
             if (!$monitoring) {
                 return response()->json([
                     'status' => 'error',
                     'message' => 'Data monitoring tidak ditemukan.'
                 ], 404);
             }
-    
+
             $monitoring->update([
                 'anak_id' => $request->anak_id,
                 'berat_badan' => $request->berat_badan,
@@ -160,7 +186,7 @@ class MonitoringController extends Controller
                 'status_imunisasi' => $request->status_imunisasi,
                 'pertanyaan_orang_tua' => $request->pertanyaan_orang_tua,
             ]);
-    
+
             return response()->json([
                 'status' => 'success',
                 'message' => 'Data monitoring berhasil diperbarui.',
@@ -172,7 +198,6 @@ class MonitoringController extends Controller
             ], 500);
         }
     }
-    
 
     public function _delete_monitoring($id)
     {

@@ -24,8 +24,12 @@
                 <div class="card">
                     <div class="card-header d-flex align-items-center justify-content-between">
                         <h5 class="card-title mb-0">Daftar Monitoring</h5>
-                        <a href="{{ url('monitoring/tambah_monitoring') }}"><button type="submit"
-                                class="btn btn-primary {{ Auth::user()->role->id == 2 ? 'd-none' : '' }}">Tambah</button></a>
+                        <div class="button">
+                            <a href="{{ url('monitoring/_export') }}" class="me-2"><button type="submit"
+                                    class="btn btn-info">Export</button></a>
+                            <a href="{{ url('monitoring/tambah_monitoring') }}"><button type="submit"
+                                    class="btn btn-primary {{ Auth::user()->role->id == 2 ? 'd-none' : '' }}">Tambah</button></a>
+                        </div>
                     </div>
 
                     <div class="card-body">

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Monitoring extends Model
 {
+    public $timestamps = false;
     protected $table = 'rekaman_monitoring';
     protected $fillable = [
         'anak_id',
@@ -16,6 +17,8 @@ class Monitoring extends Model
         'status_imunisasi',
         'pertanyaan_orang_tua',
         'status',
+        'created_at',
+        'updated_at'
     ];
 
     public function anak()

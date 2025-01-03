@@ -37,6 +37,7 @@ Route::prefix('monitoring')->middleware('auth')->group(function () {
     Route::post('_tambah_monitoring', [MonitoringController::class, '_tambah_monitoring'])->name('_tambah_monitoring');
     Route::post('_list_monitoring', [MonitoringController::class, '_list_monitoring'])->name('_list_monitoring');
     Route::post('_edit_monitoring', [MonitoringController::class, '_edit_monitoring'])->name('_edit_monitoring');
+    Route::get('_export', [MonitoringController::class, '_export'])->name('_export');
     Route::delete('_delete_monitoring/{id}', [MonitoringController::class, '_delete_monitoring'])->name('_delete_monitoring');
 
     Route::prefix('feedback')->group(function () {
@@ -44,18 +45,6 @@ Route::prefix('monitoring')->middleware('auth')->group(function () {
         Route::post('_feedback', [FeedbackController::class, '_feedback'])->name('_feedback');
     });
 });
-
-// Route::prefix('tenagamedis')->middleware('auth')->group(function () {
-//     Route::prefix('monitoring')->group(function () {
-//         Route::get('', [MonitoringController::class, 'monitoring'])->name('monitoring');
-//         Route::get('tambah_monitoring', [MonitoringController::class, 'tambah_monitoring'])->name('tambah_monitoring');
-//         Route::get('edit_monitoring/{id}', [MonitoringController::class, 'edit_monitoring'])->name('edit_monitoring');
-//         Route::post('_tambah_monitoring', [MonitoringController::class, '_tambah_monitoring'])->name('_tambah_monitoring');
-//         Route::post('_list_monitoring', [MonitoringController::class, '_list_monitoring'])->name('_list_monitoring');
-//         Route::post('_edit_monitoring', [MonitoringController::class, '_edit_monitoring'])->name('_edit_monitoring');
-//         Route::delete('_delete_monitoring/{id}', [MonitoringController::class, '_delete_monitoring'])->name('_delete_monitoring');
-//     });
-// });
 
 
 Route::get('/', function () {

@@ -8,7 +8,6 @@ use App\Models\Feedback;
 use App\Models\Monitoring;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Hash;
 
 class FeedbackController extends Controller
 {
@@ -85,7 +84,8 @@ class FeedbackController extends Controller
             }
 
             $monitoring->update([
-                'status' => 'Selesai'
+                'status' => 'Selesai',
+                'updated_at' => now()
             ]);
 
             return response()->json([
