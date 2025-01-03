@@ -197,33 +197,34 @@
                     <div class="pe-xxl-5 mb-40 mb-xl-0">
                         <div class="title-area mb-32">
                             <span class="sub-title"><img src="{{ asset('assets_portal/img/theme-img/title_icon.svg') }}"
-                                    alt="shape">Why
-                                Choose Us</span>
-                            <h2 class="sec-title">We Are Always Open For Your Health Services</h2>
+                                    alt="shape">Mengapa Memilih Kami</span>
+                            <h2 class="sec-title">Selalu Sigap Melayani</h2>
                         </div>
                         <div class="choose-feature-wrap">
                             <div class="choose-feature">
                                 <div class="box-number">01</div>
                                 <div class="media-body">
-                                    <h3 class="box-title">Compassionate & Expert Care</h3>
-                                    <p class="box-text">Our team of dedicated healthcare professionals combines years of
-                                        experience with a genuine commitment to providing.</p>
+                                    <h3 class="box-title">Pemantauan Pertumbuhan Anak</h3>
+                                    <p class="box-text">Pantau Tumbuh membantu orang tua dan tenaga kesehatan
+                                    memantau  perkembangan berat dan tinggi badan anak sesuai
+                                    dengan standar WHO memastikan deteksi dini masalah stunting.</p>
                                 </div>
                             </div>
                             <div class="choose-feature">
                                 <div class="box-number">02</div>
                                 <div class="media-body">
-                                    <h3 class="box-title">Patient-Centered Approach</h3>
-                                    <p class="box-text">Your health and well-being are our top priorities. We take the time
-                                        to listen to your concerns, answer your questions.</p>
+                                    <h3 class="box-title">Edukasi Gizi dan Kesehatan Anak</h3>
+                                    <p class="box-text">Pantau Tumbuh menyediakan berbagai  informasi edukatif tentang gizi
+                                    anak dan cara pencegahan stunting, mendukung orang tua dalam
+                                    merawat kesehatan anak secara optimal.</p>
                                 </div>
                             </div>
                             <div class="choose-feature">
                                 <div class="box-number">03</div>
                                 <div class="media-body">
-                                    <h3 class="box-title">Personalized Treatment Plans</h3>
-                                    <p class="box-text">We understand that every patient is unique, and their healthcare
-                                        needs may vary. That's why we create individualized treatment.</p>
+                                    <h3 class="box-title">Pencatatan dan Monitoring yang Mudah</h3>
+                                    <p class="box-text">Fitur pencatatan yang mudah digunakan memungkinkan orang tua untuk memantau
+                                    perkembangan anak setiap saat, bahkan dengan notifikasi untuk memastikan pemantauan rutin.</p>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +232,7 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="img-box3">
-                        <img src="{{ asset('assets_portal/img/normal/why_1.jpg') }}" alt="Why">
+                        <img src="{{ asset('assets_portal/img/normal/Dokter-Landing Page.png') }}" alt="Why">
                     </div>
                 </div>
             </div>
@@ -245,28 +246,28 @@
                     <h2 class="box-number">
                         <span class="number"><span class="counter-number">69</span>k</span><span class="plus">+</span>
                     </h2>
-                    <p class="box-text">Satisfied Patients</p>
+                    <p class="box-text">Orang Tua Merasa Puas</p>
                 </div>
                 <div class="divider"></div>
                 <div class="counter-card">
                     <h2 class="box-number">
                         <span class="number"><span class="counter-number">236</span></span><span class="plus">+</span>
                     </h2>
-                    <p class="box-text">Professional Doctors</p>
+                    <p class="box-text">Dokter Profesional</p>
                 </div>
                 <div class="divider"></div>
                 <div class="counter-card">
                     <h2 class="box-number">
                         <span class="number"><span class="counter-number">19</span>k</span><span class="plus">+</span>
                     </h2>
-                    <p class="box-text">Operations Successful</p>
+                    <p class="box-text">Partner</p>
                 </div>
                 <div class="divider"></div>
                 <div class="counter-card">
                     <h2 class="box-number">
                         <span class="number"><span class="counter-number">320</span></span><span class="plus">+</span>
                     </h2>
-                    <p class="box-text">National Awards Win</p>
+                    <p class="box-text">Penghargaan Nasional</p>
                 </div>
                 <div class="divider"></div>
             </div>
@@ -439,9 +440,8 @@
                         </div>
                         <p class="box-number">01</p>
                     </div>
-                    <h3 class="box-title">Patient Registration</h3>
-                    <p class="box-text">The first step in our process is to welcome our patients and ensure they have a
-                        experience.</p>
+                    <h3 class="box-title">Pendaftaran</h3>
+                    <p class="box-text">Mulai monitoring anak dengan mendaftar melalui web Pantau Tumbuh</p>
                 </div>
                 <div class="process-card">
                     <div class="box-img">
@@ -450,9 +450,8 @@
                         </div>
                         <p class="box-number">02</p>
                     </div>
-                    <h3 class="box-title">Check-Ups</h3>
-                    <p class="box-text">Once the patient is checked in, healthcare professional conduct a thorough
-                        evaluation.</p>
+                    <h3 class="box-title">Pemeriksaan</h3>
+                    <p class="box-text">Memastikan anak sehat dan terhindar dari stunting sesuai standar WHO</p>
                 </div>
                 <div class="process-card">
                     <div class="box-img">
@@ -461,8 +460,8 @@
                         </div>
                         <p class="box-number">03</p>
                     </div>
-                    <h3 class="box-title">Get Report</h3>
-                    <p class="box-text">Analyzing the result of diagnostic tests & incorporating them into the diagnosis.
+                    <h3 class="box-title">Feedback</h3>
+                    <p class="box-text">Terima hasil pemeriksaan lengkap dengan saran kesehatan dari tenaga medis.
                     </p>
                 </div>
                 <div class="process-card">
@@ -472,9 +471,8 @@
                         </div>
                         <p class="box-number">04</p>
                     </div>
-                    <h3 class="box-title">Ongoing Care</h3>
-                    <p class="box-text">Our commitment to our patient extend beyond the initial visit. we ensure continuity
-                        of care.</p>
+                    <h3 class="box-title">Monitoring</h3>
+                    <p class="box-text">Pantau perkembangan anak secara rutin untuk memastikan pertumbuhan optimal.</p>
                 </div>
             </div>
         </div>
