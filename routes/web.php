@@ -8,6 +8,7 @@ use App\Http\Controllers\MonitoringController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\UsermanagementController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ArtikelController;
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('umkm')->middleware('auth');
 
@@ -63,9 +64,20 @@ Route::prefix('profile')->middleware('auth')->group(function () {
     Route::post('_edit_password', [ProfileController::class, '_edit_password'])->name('_edit_password');
 });
 
+Route::prefix('artikel')->middleware('auth')->group(function () {
+    Route::get('', [ArtikelController::class, 'artikel'])->name('artikel');
+    Route::get('tambah_artikel', [ArtikelController::class, 'tambah_artikel'])->name('tambah_artikel');
+    Route::get('edit_artikel/{id}', [ArtikelController::class, 'edit_artikel'])->name('edit_artikel');
+    Route::post('_tambah_artikel', [ArtikelController::class, '_tambah_artikel'])->name('_tambah_artikel');
+    Route::post('_list_artikel', [ArtikelController::class, '_list_artikel'])->name('_list_artikel');
+    Route::post('_edit_artikel', [ArtikelController::class, '_edit_artikel'])->name('_edit_artikel');
+    Route::delete('_delete_artikel/{id}', [ArtikelController::class, '_delete_artikel'])->name('_delete_artikel');
+});
+
 Route::get('/', function () {
     return view('index');
 });
+
 Route::get('/tentang-kami', function () {
     return view('about');
 });
@@ -74,9 +86,9 @@ Route::get('/kontak', function () {
     return view('contact');
 });
 
-Route::get('/artikel', function () {
-    return view('artikel');
-});
+// Route::get('/artikel', function () {
+//     return view('artikel');
+// });
 
 Route::get('/artikel-detail', function () {
     return view('artikel-detail');

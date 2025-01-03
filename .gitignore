@@ -10,6 +10,7 @@
 /public/foto_user
 /public/surat_rujukan
 /public/modul_kesehatan
+/public/image_artikel
 .env
 .env.backup
 .env.production

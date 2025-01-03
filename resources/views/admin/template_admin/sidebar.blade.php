@@ -69,7 +69,7 @@
                 </li>
 
                 <li>
-                    <a href="apps-contacts.html" class="tp-link">
+                    <a href="{{ url('/artikel') }}" class="tp-link">
                         <i data-feather="table"></i>
                         <span> Artikel </span>
                     </a>
@@ -79,13 +79,6 @@
                     <a href="apps-contacts.html" class="tp-link">
                         <i data-feather="package"></i>
                         <span> FAQ </span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="apps-contacts.html" class="tp-link">
-                        <i data-feather="user"></i>
-                        <span> Profile Website </span>
                     </a>
                 </li>
             </ul>
