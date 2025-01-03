@@ -141,7 +141,7 @@
                     } else {
                         Swal.fire({
                             icon: 'error',
-                            title: 'Login Gagal',
+                            title: 'Data Gagal Terkirim',
                             text: response.message,
                             confirmButtonText: 'OK',
                             customClass: {
@@ -166,7 +166,7 @@
 
                         Swal.fire({
                             icon: 'error',
-                            title: 'Login Gagal',
+                            title: 'Data Gagal Terkirim',
                             html: errorMessage,
                             confirmButtonText: 'OK',
                             customClass: {

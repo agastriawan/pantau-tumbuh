@@ -7,6 +7,9 @@ use App\Http\Controllers\AnakController;
 use App\Http\Controllers\MonitoringController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\UsermanagementController;
+use App\Http\Controllers\ProfileController;
+
+Route::get('dashboard', [DashboardController::class, 'index'])->name('umkm')->middleware('auth');
 
 Route::prefix('auth')->group(function () {
     Route::get('login', [AuthController::class, 'login'])->name('login');
@@ -15,8 +18,6 @@ Route::prefix('auth')->group(function () {
     Route::post('_login', [AuthController::class, '_login'])->name('_login');
     Route::post('_logout', [AuthController::class, '_logout']);
 });
-
-Route::get('dashboard', [DashboardController::class, 'index'])->name('umkm')->middleware('auth');
 
 Route::prefix('orangtua')->middleware('auth')->group(function () {
     Route::prefix('anak')->group(function () {
@@ -56,6 +57,11 @@ Route::prefix('usermanagement')->middleware('auth')->group(function () {
     Route::delete('_delete_user/{id}', [UsermanagementController::class, '_delete_user'])->name('_delete_user');
 });
 
+Route::prefix('profile')->middleware('auth')->group(function () {
+    Route::get('', [ProfileController::class, 'profile'])->name('profile');
+    Route::post('_edit_user', [ProfileController::class, '_edit_user'])->name('_edit_user');
+    Route::post('_edit_password', [ProfileController::class, '_edit_password'])->name('_edit_password');
+});
 
 Route::get('/', function () {
     return view('index');
@@ -74,12 +80,4 @@ Route::get('/artikel', function () {
 
 Route::get('/artikel-detail', function () {
     return view('artikel-detail');
-});
-
-Route::get('/profile', function () {
-    return view('admin/profile');
-});
-
-Route::get('/orangtua/monitoring/add', function () {
-    return view('admin/orangtua/add');
 });

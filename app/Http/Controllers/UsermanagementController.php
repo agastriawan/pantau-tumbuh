@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Role;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
@@ -25,7 +24,7 @@ class UsermanagementController extends Controller
 
         return view('admin/usermanagement/add', $data);
     }
-
+    
     public function edit_user($id)
     {
         $user = User::findOrFail($id);
