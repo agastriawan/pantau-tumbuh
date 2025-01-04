@@ -9,6 +9,7 @@ use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\UsermanagementController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\FaqController;
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('umkm')->middleware('auth');
 
@@ -72,6 +73,16 @@ Route::prefix('artikel')->middleware('auth')->group(function () {
     Route::post('_list_artikel', [ArtikelController::class, '_list_artikel'])->name('_list_artikel');
     Route::post('_edit_artikel', [ArtikelController::class, '_edit_artikel'])->name('_edit_artikel');
     Route::delete('_delete_artikel/{id}', [ArtikelController::class, '_delete_artikel'])->name('_delete_artikel');
+});
+
+Route::prefix('faq')->middleware('auth')->group(function () {
+    Route::get('', [FaqController::class, 'faq'])->name('faq');
+    Route::get('tambah_faq', [FaqController::class, 'tambah_faq'])->name('tambah_faq');
+    Route::get('edit_faq/{id}', [FaqController::class, 'edit_faq'])->name('edit_faq');
+    Route::post('_tambah_faq', [FaqController::class, '_tambah_faq'])->name('_tambah_faq');
+    Route::post('_list_faq', [FaqController::class, '_list_faq'])->name('_list_faq');
+    Route::post('_edit_faq', [FaqController::class, '_edit_faq'])->name('_edit_faq');
+    Route::delete('_delete_faq/{id}', [FaqController::class, '_delete_faq'])->name('_delete_faq');
 });
 
 Route::get('/', function () {

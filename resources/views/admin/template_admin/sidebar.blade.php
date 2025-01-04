@@ -76,7 +76,7 @@
                 </li>
 
                 <li>
-                    <a href="apps-contacts.html" class="tp-link">
+                    <a href="{{ url('/faq') }}" class="tp-link">
                         <i data-feather="package"></i>
                         <span> FAQ </span>
                     </a>

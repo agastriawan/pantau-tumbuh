@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('faq', function (Blueprint $table) {
             $table->id();
+            $table->string('judul')->nullable(); 
+            $table->text('isi')->nullable(); 
             $table->timestamps();
         });
     }
