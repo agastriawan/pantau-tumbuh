@@ -8,6 +8,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Pantau Tumbuh</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset("assets_portal/img/favicons/apple-icon.png") }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ asset("assets_portal/img/favicons/android-chrome-192x192.png") }}">
+
     <link href="{{ asset('assets_admin/css/app.min.css') }}" rel="stylesheet" type="text/css" id="app-style" />
     <link href="{{ asset('assets_admin/css/icons.min.css') }}" rel="stylesheet" type="text/css" />  
     <link href="{{ asset('assets_admin/libs/flatpickr/flatpickr.min.css') }}" rel="stylesheet" type="text/css" />
