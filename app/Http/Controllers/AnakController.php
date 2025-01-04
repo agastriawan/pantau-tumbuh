@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Anak;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
 
@@ -33,7 +34,7 @@ class AnakController extends Controller
     
     public function _list_anak(Request $request)
     {
-        $anak = Anak::all();
+        $anak = Anak::where('user_id', Auth::user()->id)->get();
 
         $data = [
             "data" => $anak
@@ -78,6 +79,7 @@ class AnakController extends Controller
 
             Anak::create([
                 'nama' => $request->nama,
+                'user_id' => Auth::user()->id,
                 'tanggal_lahir' => $tanggalLahir,
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'foto' => $fotoNameWithPrefix . '.' . $fotoExtension,
@@ -108,7 +110,7 @@ class AnakController extends Controller
             'nama' => 'required|string',
             'tanggal_lahir' => 'required',
             'jenis_kelamin' => 'required',
-            'foto' => 'nullable|max:10240',
+            'foto' => ' |max:10240',
         ], $messages);
     
         if ($validator->fails()) {
@@ -142,6 +144,7 @@ class AnakController extends Controller
 
             $anak->update([
                 'nama' => $request->nama,
+                'user_id' => Auth::user()->id,
                 'tanggal_lahir' => $tanggalLahir,
                 'jenis_kelamin' => $request->jenis_kelamin,
                 'foto' => $fotoNameWithPrefix,

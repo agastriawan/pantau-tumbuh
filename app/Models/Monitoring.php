@@ -10,6 +10,7 @@ class Monitoring extends Model
     protected $table = 'rekaman_monitoring';
     protected $fillable = [
         'anak_id',
+        'user_id',
         'berat_badan',
         'tinggi_badan',
         'lingkar_kepala',

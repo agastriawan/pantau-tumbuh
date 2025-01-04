@@ -59,6 +59,7 @@
                 </li>
                 @endif
 
+                @if (Auth::user()->role->id == 3 ) 
                 <li class="menu-title mt-2">Administrator</li>
 
                 <li>
@@ -81,6 +82,7 @@
                         <span> FAQ </span>
                     </a>
                 </li>
+                @endif
             </ul>
 
         </div>

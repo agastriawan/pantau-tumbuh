@@ -9,6 +9,7 @@ class Feedback extends Model
     protected $table = 'feedback';
     protected $fillable = [
         'rekaman_monitoring_id',
+        'user_id',
         'isi_feedback',
         'surat_rujukan',
         'modul_kesehatan',

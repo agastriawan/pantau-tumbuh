@@ -8,6 +8,7 @@ use App\Exports\MonitoringExport;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class MonitoringController extends Controller
 {
@@ -18,7 +19,7 @@ class MonitoringController extends Controller
 
     public function tambah_monitoring()
     {
-        $anak = Anak::select('id', 'nama')->get();
+        $anak = Anak::select('id', 'nama')->where('user_id', Auth::user()->id)->get();
         $data = [
             'anak' => $anak
         ];
@@ -28,7 +29,7 @@ class MonitoringController extends Controller
     public function edit_monitoring($id)
     {
         $monitoring = Monitoring::findOrFail($id);
-        $anak = Anak::select('id', 'nama')->get();
+        $anak = Anak::select('id', 'nama')->where('user_id', Auth::user()->id)->get();
 
         $data = [
             "monitoring" => $monitoring,
@@ -63,7 +64,7 @@ class MonitoringController extends Controller
 
     public function _list_monitoring()
     {
-        $monitoring = Monitoring::with('anak:id,nama')->get();
+        $monitoring = Monitoring::with('anak:id,nama')->where('user_id', Auth::user()->id)->get();
 
         $data = $monitoring->map(function ($item) {
             return [
@@ -114,6 +115,7 @@ class MonitoringController extends Controller
         try {
             Monitoring::create([
                 'anak_id' => $request->anak_id,
+                 'user_id' => Auth::user()->id,
                 'berat_badan' => $request->berat_badan,
                 'tinggi_badan' => $request->tinggi_badan,
                 'lingkar_kepala' => $request->lingkar_kepala,
@@ -179,6 +181,7 @@ class MonitoringController extends Controller
 
             $monitoring->update([
                 'anak_id' => $request->anak_id,
+                 'user_id' => Auth::user()->id,
                 'berat_badan' => $request->berat_badan,
                 'tinggi_badan' => $request->tinggi_badan,
                 'lingkar_kepala' => $request->lingkar_kepala,

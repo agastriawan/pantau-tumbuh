@@ -30,7 +30,7 @@
                                         </div>
                                         <p class="mb-0 text-dark fs-15">Total Pemeriksaan</p>
                                     </div>
-                                    <h3 class="mb-0 fs-24 text-black me-2">57.800</h3>
+                                    <h3 class="mb-0 fs-24 text-black me-2">{{ $totalMonitoring ?? 0 }}</h3>
                                 </div>
 
                                 <div>
@@ -58,7 +58,7 @@
                                         </div>
                                         <p class="mb-0 text-dark fs-15">Total Feedback</p>
                                     </div>
-                                    <h3 class="mb-0 fs-24 text-black me-2">637</h3>
+                                    <h3 class="mb-0 fs-24 text-black me-2">{{ $totalFeedback ?? 0 }}</h3>
                                 </div>
 
                                 <div>

@@ -22,12 +22,13 @@
                 <li class="dropdown notification-list topbar-dropdown">
                     <a class="nav-link dropdown-toggle nav-user me-0" data-bs-toggle="dropdown" href="#"
                         role="button" aria-haspopup="false" aria-expanded="false">
-                        <img src="{{ asset('assets_portal/img/team/team_1.jpeg') }}" alt="user-image"
-                            class="rounded-circle">
+                        <img src="{{ Auth::user()->foto ? asset('foto_user/' . Auth::user()->foto) : asset('assets_admin/images/user.png') }}"
+                            alt="user-image" class="rounded-circle">
                         <span class="pro-user-name ms-1">
                             {{ Auth::user()->nama }} <i class="mdi mdi-chevron-down"></i>
                         </span>
                     </a>
+
                     <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
                         <a href="{{ url('/profile') }}" class="dropdown-item notify-item">
                             <i class="mdi mdi-account-circle-outline fs-16 align-middle"></i>

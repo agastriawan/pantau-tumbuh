@@ -26,7 +26,7 @@
 
                             <div class="silva-main-sections">
                                 <div class="silva-profile-main">
-                                    <img src="{{ asset('foto_user/') }}/{{ $user->foto }}" id="imagePreview"
+                                    <img src="{{ Auth::user()->foto ? asset('foto_user/' . Auth::user()->foto) : asset('assets_admin/images/user.png') }}" id="imagePreview"
                                         class="rounded-circle img-fluid avatar-xxl img-thumbnail float-start"
                                         alt="image profile" style="cursor: pointer;">
 

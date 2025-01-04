@@ -8,6 +8,7 @@ class Anak extends Model
 {
     protected $table = 'anak';
     protected $fillable = [
+        'user_id',
         'nama',
         'tanggal_lahir',
         'jenis_kelamin',

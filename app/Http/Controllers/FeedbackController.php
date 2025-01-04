@@ -8,6 +8,7 @@ use App\Models\Feedback;
 use App\Models\Monitoring;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class FeedbackController extends Controller
 {
@@ -71,6 +72,7 @@ class FeedbackController extends Controller
             if ($feedback) {
                 $feedback->update([
                     'isi_feedback' => $request->isi_feedback,
+                    'user_id' => Auth::user()->id,
                     'surat_rujukan' => $suratNameWithPrefix . '.' . $suratExtension,
                     'modul_kesehatan' => $modulNameWithPrefix . '.' . $modulExtension,
                 ]);
@@ -78,6 +80,7 @@ class FeedbackController extends Controller
                 Feedback::create([
                     'rekaman_monitoring_id' => $request->rekaman_monitoring_id,
                     'isi_feedback' => $request->isi_feedback,
+                    'user_id' => Auth::user()->id,
                     'surat_rujukan' => $suratNameWithPrefix . '.' . $suratExtension,
                     'modul_kesehatan' => $modulNameWithPrefix . '.' . $modulExtension,
                 ]);
