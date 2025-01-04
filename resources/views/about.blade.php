@@ -62,7 +62,7 @@
                                     <div class="about-contact">
                                         <p class="box-label">Support Line 24/7</p>
                                         <h3 class="box-title"><i class="fal fa-envelope"></i> <a
-                                            href="{{ url('/kontak') }}">Kontak Kami</a></h3>
+                                            href="{{ url('kontak_kami') }}">Kontak Kami</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -90,34 +90,34 @@
                                 <img class="img-team-web" src="{{ asset('assets_portal/img/team/team_1_8.jpg') }}"
                                     alt="Team">
                                 <div class="th-social">
-                                    <a target="_blank" href=""><i class="fab fa-instagram"></i></a>
-                                    <a target="_blank" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/abdurrafa22_?igsh=MW9iMHY1bndwNnQyeg=="><i class="fab fa-instagram"></i></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/rafa-abdurrahman-8a3758293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
-                            <h3 class="box-title"><a href="team-details.html">Abdurrahman Rafatullah</a></h3>
-                            <span class="team-desig">-</span>
+                            <h3 class="box-title"><a href="#">Abdurrahman Rafatullah</a></h3>
+                            <span class="team-desig">Product Owner</span>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/team_1_8.jpg') }}"
+                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/abror.jpg') }}"
                                     alt="Team">
                                 <div class="th-social">
-                                    <a target="_blank" href=""><i class="fab fa-instagram"></i></a>
-                                    <a target="_blank" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/abrrpr/"><i class="fab fa-instagram"></i></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/abror-pratama-harahap-947558308/"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
-                            <h3 class="box-title"><a href="team-details.html">Abror Pratama Harahap</a></h3>
-                            <span class="team-desig">-</span>
+                            <h3 class="box-title"><a href="#">Abror Pratama Harahap</a></h3>
+                            <span class="team-desig">Scrum Master</span>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/team_1.jpeg') }}"
+                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/agas.png') }}"
                                     alt="Team">
                                 <div class="th-social">
                                     <a target="_blank"
@@ -127,7 +127,7 @@
                                             class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
-                            <h3 class="box-title"><a href="team-details.html">Agas Triawan</a></h3>
+                            <h3 class="box-title"><a href="#">Agas Triawan</a></h3>
                             <span class="team-desig">Developer</span>
                         </div>
                     </div>
@@ -135,7 +135,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/team_1_8.jpg') }}"
+                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/arby.jpg') }}"
                                     alt="Team">
                                 <div class="th-social">
                                     <a target="_blank"
@@ -146,7 +146,7 @@
                                             class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
-                            <h3 class="box-title"><a href="team-details.html">Arby Ali Amaludin</a></h3>
+                            <h3 class="box-title"><a href="#">Arby Ali Amaludin</a></h3>
                             <span class="team-desig">Developer</span>
                         </div>
                     </div>
@@ -154,14 +154,14 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/team_1_8.jpg') }}"
+                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/adi.jpg') }}"
                                     alt="Team">
                                 <div class="th-social">
-                                    <a target="_blank" href=""><i class="fab fa-instagram"></i></a>
-                                    <a target="_blank" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/adikurniawan1171?igsh=MWtoZzB1M3c0NW5nOQ=="><i class="fab fa-instagram"></i></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/adi-kurniawan-789401293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
-                            <h3 class="box-title"><a href="team-details.html">Adi kurniawan</a></h3>
+                            <h3 class="box-title"><a href="#">Adi kurniawan</a></h3>
                             <span class="team-desig">Developer</span>
                         </div>
                     </div>
@@ -169,7 +169,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/team_1_8.jpg') }}"
+                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/ainun.jpg') }}"
                                     alt="Team">
                                 <div class="th-social">
                                     <a target="_blank"
@@ -180,7 +180,7 @@
                                             class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
-                            <h3 class="box-title"><a href="team-details.html">Ainun Nisa widya Ningrum</a></h3>
+                            <h3 class="box-title"><a href="#">Ainun Nisa widya Ningrum</a></h3>
                             <span class="team-desig">Media Kreatif</span>
                         </div>
                     </div>
@@ -197,7 +197,24 @@
                                             class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
-                            <h3 class="box-title"><a href="team-details.html">Ulfa Faradillah</a></h3>
+                            <h3 class="box-title"><a href="#">Ulfa Faradillah</a></h3>
+                            <span class="team-desig">Media Kreatif</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="th-team team-card">
+                            <div class="box-img">
+                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/team_1_8.jpg') }}"
+                                    alt="Team">
+                                <div class="th-social">
+                                    <a target="_blank" href="https://www.instagram.com/hiii_nanazwaquen27/profilecard/?igsh=ZXg4enh1ZXo4cXg1"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/nur-sabilla-nazwa-388bb8308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="box-title"><a href="#">Nazwa Nur Sabilla</a></h3>
                             <span class="team-desig">Media Kreatif</span>
                         </div>
                     </div>
@@ -217,7 +234,7 @@
             <div class="achieve-box-wrap">
                 <div class="achieve-box hover-item item-active">
                     <div class="box-img">
-                        <img src="{{ asset('assets_portal/img/normal/achieve_1.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets_portal/img/normal/anak.jpg') }}" alt="Image">
                     </div>
                     <div class="box-year">1</div>
                     <div class="media-body">
@@ -229,7 +246,7 @@
                 </div>
                 <div class="achieve-box hover-item ">
                     <div class="box-img">
-                        <img src="{{ asset('assets_portal/img/normal/achieve_2.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets_portal/img/normal/nutrisi.jpg') }}" alt="Image">
                     </div>
                     <div class="box-year">2</div>
                     <div class="media-body">
@@ -240,7 +257,7 @@
                 </div>
                 <div class="achieve-box hover-item ">
                     <div class="box-img">
-                        <img src="{{ asset('assets_portal/img/normal/achieve_3.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets_portal/img/normal/monitoring.jpg') }}" alt="Image">
                     </div>
                     <div class="box-year">3</div>
                     <div class="media-body">

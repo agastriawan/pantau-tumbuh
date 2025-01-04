@@ -12,9 +12,12 @@
                         <span class="title1">Anak <span class="line-text">Sehat</span></span>
                         <span class="title2">Masa Depan Cerah</span>
                     </h1>
-                    <p class="hero-text">Bersama kita jaga pertumbuhan anak sesuai standar kesehatan. Solusi praktis untuk pemantauan dan edukasi gizi anak.</p>
+                    <p class="hero-text">Bersama kita jaga pertumbuhan anak sesuai standar kesehatan. Solusi praktis untuk
+                        pemantauan dan edukasi gizi anak.</p>
                     <div class="btn-group justify-content-center">
-                        <a href="{{ url('/login') }}" class="th-btn">Pantau Kesehatan Anak Disini</a>
+                        <a href="{{ url('auth/login') }}"class="th-btn">Pantau
+                            Kesehatan Anak
+                            Disini</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +65,7 @@
                                 standar WHO.</p>
                         </div>
                         <div>
-                            <a href="{{ url('/tentang-kami') }}" class="th-btn">Selengkapnya</a>
+                            <a href="{{ url('tentang_kami') }}" class="th-btn">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -83,107 +86,47 @@
             </div>
             <div class="row gy-4 justify-content-center">
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card"
-                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
+                    <div class="service-card" data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
                             <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset('assets_portal/img/icon/service_card_1.svg') }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/consultation.png') }}" alt="Icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details.html">Internal Medicine</a></h3>
-                        <p class="box-text">30+ Doctors</p>
+                        <h3 class="box-title"><a href="#">Konsultasi dengan Ahli</a></h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card"
-                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
+                    <div class="service-card" data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
                             <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset('assets_portal/img/icon/service_card_2.svg') }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/little-kid.png') }}" alt="Icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details.html">Dental Care</a></h3>
-                        <p class="box-text">20+ Doctors</p>
+                        <h3 class="box-title"><a href="#">Pantau Tumbuh</a></h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card"
-                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
+                    <div class="service-card" data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
                             <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset('assets_portal/img/icon/service_card_3.svg') }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/reading-book.png') }}" alt="Icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details.html">Urology Care</a></h3>
-                        <p class="box-text">20+ Doctors</p>
+                        <h3 class="box-title"><a href="#">Edukasi Orang Tua</a></h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card"
-                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
+                    <div class="service-card" data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
                         <div class="box-shape">
                             <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
                         </div>
                         <div class="box-icon">
-                            <img src="{{ asset('assets_portal/img/icon/service_card_4.svg') }}" alt="Icon">
+                            <img src="{{ asset('assets_portal/img/icon/diet.png') }}" alt="Icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details.html">Neurology Care</a></h3>
-                        <p class="box-text">10+ Doctors</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card"
-                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
-                        <div class="box-shape">
-                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
-                        </div>
-                        <div class="box-icon">
-                            <img src="{{ asset('assets_portal/img/icon/service_card_5.svg') }}" alt="Icon">
-                        </div>
-                        <h3 class="box-title"><a href="service-details.html">Gynecologists</a></h3>
-                        <p class="box-text">30+ Doctors</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card"
-                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
-                        <div class="box-shape">
-                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
-                        </div>
-                        <div class="box-icon">
-                            <img src="{{ asset('assets_portal/img/icon/service_card_6.svg') }}" alt="Icon">
-                        </div>
-                        <h3 class="box-title"><a href="service-details.html">Ophthalmology</a></h3>
-                        <p class="box-text">24+ Doctors</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card"
-                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
-                        <div class="box-shape">
-                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
-                        </div>
-                        <div class="box-icon">
-                            <img src="{{ asset('assets_portal/img/icon/service_card_7.svg') }}" alt="Icon">
-                        </div>
-                        <h3 class="box-title"><a href="service-details.html">Orthopedics</a></h3>
-                        <p class="box-text">26+ Doctors</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="service-card"
-                        data-bg-src="{{ asset('assets_portal/img/service/service_bg_1.jpg') }}">
-                        <div class="box-shape">
-                            <img src="{{ asset('assets_portal/img/bg/service_card_bg.png') }}" alt="Service">
-                        </div>
-                        <div class="box-icon">
-                            <img src="{{ asset('assets_portal/img/icon/service_card_8.svg') }}" alt="Icon">
-                        </div>
-                        <h3 class="box-title"><a href="service-details.html">Cardiology</a></h3>
-                        <p class="box-text">20+ Doctors</p>
+                        <h3 class="box-title"><a href="#">Nutrisi dan Pola Asuh</a></h3>
                     </div>
                 </div>
             </div>
@@ -206,25 +149,27 @@
                                 <div class="media-body">
                                     <h3 class="box-title">Pemantauan Pertumbuhan Anak</h3>
                                     <p class="box-text">Pantau Tumbuh membantu orang tua dan tenaga kesehatan
-                                    memantau  perkembangan berat dan tinggi badan anak sesuai
-                                    dengan standar WHO memastikan deteksi dini masalah stunting.</p>
+                                        memantau perkembangan berat dan tinggi badan anak sesuai
+                                        dengan standar WHO memastikan deteksi dini masalah stunting.</p>
                                 </div>
                             </div>
                             <div class="choose-feature">
                                 <div class="box-number">02</div>
                                 <div class="media-body">
                                     <h3 class="box-title">Edukasi Gizi dan Kesehatan Anak</h3>
-                                    <p class="box-text">Pantau Tumbuh menyediakan berbagai  informasi edukatif tentang gizi
-                                    anak dan cara pencegahan stunting, mendukung orang tua dalam
-                                    merawat kesehatan anak secara optimal.</p>
+                                    <p class="box-text">Pantau Tumbuh menyediakan berbagai informasi edukatif tentang gizi
+                                        anak dan cara pencegahan stunting, mendukung orang tua dalam
+                                        merawat kesehatan anak secara optimal.</p>
                                 </div>
                             </div>
                             <div class="choose-feature">
                                 <div class="box-number">03</div>
                                 <div class="media-body">
                                     <h3 class="box-title">Pencatatan dan Monitoring yang Mudah</h3>
-                                    <p class="box-text">Fitur pencatatan yang mudah digunakan memungkinkan orang tua untuk memantau
-                                    perkembangan anak setiap saat, bahkan dengan notifikasi untuk memastikan pemantauan rutin.</p>
+                                    <p class="box-text">Fitur pencatatan yang mudah digunakan memungkinkan orang tua untuk
+                                        memantau
+                                        perkembangan anak setiap saat, bahkan dengan notifikasi untuk memastikan pemantauan
+                                        rutin.</p>
                                 </div>
                             </div>
                         </div>
@@ -244,38 +189,37 @@
             <div class="counter-card-wrap">
                 <div class="counter-card">
                     <h2 class="box-number">
-                        <span class="number"><span class="counter-number">69</span>k</span><span class="plus">+</span>
+                        <span class="number"><span class="counter-number">{{ $orangtua ?? 0 }}</span></span>
                     </h2>
-                    <p class="box-text">Orang Tua Merasa Puas</p>
+                    <p class="box-text">Orang Tua Terdaftar</p>
                 </div>
                 <div class="divider"></div>
                 <div class="counter-card">
                     <h2 class="box-number">
-                        <span class="number"><span class="counter-number">236</span></span><span class="plus">+</span>
+                        <span class="number"><span class="counter-number">{{ $tenagamediscount ?? 0 }}</span></span>
                     </h2>
-                    <p class="box-text">Dokter Profesional</p>
+                    <p class="box-text">Tenaga Medis</p>
                 </div>
                 <div class="divider"></div>
                 <div class="counter-card">
                     <h2 class="box-number">
-                        <span class="number"><span class="counter-number">19</span>k</span><span class="plus">+</span>
+                        <span class="number"><span class="counter-number">5</span></span>
                     </h2>
-                    <p class="box-text">Partner</p>
+                    <p class="box-text">Partner Rumah Sakit</p>
                 </div>
                 <div class="divider"></div>
                 <div class="counter-card">
                     <h2 class="box-number">
-                        <span class="number"><span class="counter-number">320</span></span><span class="plus">+</span>
+                        <span class="number"><span class="counter-number">1</span></span>
                     </h2>
-                    <p class="box-text">Penghargaan Nasional</p>
+                    <p class="box-text">Penghargaan</p>
                 </div>
                 <div class="divider"></div>
             </div>
         </div>
     </div>
 
-    <section class="bg-top-center space" id="team-sec"
-        data-bg-src="{{ asset('assets_portal/img/bg/team_bg_1.jpg') }}">
+    <section class="bg-top-center space" id="team-sec" data-bg-src="{{ asset('assets_portal/img/bg/team_bg_1.jpg') }}">
         <div class="container z-index-common">
             <div class="title-area text-center">
                 <span class="sub-title"><img src="{{ asset('assets_portal/img/theme-img/title_icon.svg') }}"
@@ -285,141 +229,19 @@
             <div class="swiper th-slider has-shadow" id="teamSlider1"
                 data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="th-team team-card">
-                            <div class="box-img">
-                                <img src="{{ asset('assets_portal/img/team/team_1_1.jpg') }}" alt="Team">
-                                <div class="th-social">
-                                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank" href="https://linkedin.com/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    @if (!empty($tenagamedis))
+                        @foreach ($tenagamedis as $nakes)
+                            <div class="swiper-slide">
+                                <div class="th-team team-card">
+                                    <div class="box-img">
+                                        <img src="{{ asset('foto_user/' . $nakes->foto) }}" alt="Team">
+                                    </div>
+                                    <h3 class="box-title"><a href="#">{{ $nakes->nama }}</a></h3>
+                                    <span class="team-desig">Tenaga Medis</span>
                                 </div>
                             </div>
-                            <h3 class="box-title"><a href="team-details.html">Dr. Malcolm Function</a></h3>
-                            <span class="team-desig">Neurologist</span>
-                        </div>
-                    </div>
-
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="th-team team-card">
-                            <div class="box-img">
-                                <img src="{{ asset('assets_portal/img/team/team_1_2.jpg') }}" alt="Team">
-                                <div class="th-social">
-                                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank" href="https://linkedin.com/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="box-title"><a href="team-details.html">Dr. Douglas Lyphe</a></h3>
-                            <span class="team-desig">Physiotherapist</span>
-                        </div>
-                    </div>
-
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="th-team team-card">
-                            <div class="box-img">
-                                <img src="{{ asset('assets_portal/img/team/team_1_3.jpg') }}" alt="Team">
-                                <div class="th-social">
-                                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank" href="https://linkedin.com/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="box-title"><a href="team-details.html">Dr. Wisteria Ravenc</a></h3>
-                            <span class="team-desig">Cardiologist</span>
-                        </div>
-                    </div>
-
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="th-team team-card">
-                            <div class="box-img">
-                                <img src="{{ asset('assets_portal/img/team/team_1_4.jpg') }}" alt="Team">
-                                <div class="th-social">
-                                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank" href="https://linkedin.com/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="box-title"><a href="team-details.html">Dr. Benjamin Evalent</a></h3>
-                            <span class="team-desig">Dentist</span>
-                        </div>
-                    </div>
-
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="th-team team-card">
-                            <div class="box-img">
-                                <img src="{{ asset('assets_portal/img/team/team_1_5.jpg') }}" alt="Team">
-                                <div class="th-social">
-                                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank" href="https://linkedin.com/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="box-title"><a href="team-details.html">Dr. Rishita Rosei</a></h3>
-                            <span class="team-desig">Neurologist</span>
-                        </div>
-                    </div>
-
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="th-team team-card">
-                            <div class="box-img">
-                                <img src="{{ asset('assets_portal/img/team/team_1_6.jpg') }}" alt="Team">
-                                <div class="th-social">
-                                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank" href="https://linkedin.com/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="box-title"><a href="team-details.html">Dr. Emanuyel Mac</a></h3>
-                            <span class="team-desig">Physiotherapist</span>
-                        </div>
-                    </div>
-
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="th-team team-card">
-                            <div class="box-img">
-                                <img src="{{ asset('assets_portal/img/team/team_1_7.jpg') }}" alt="Team">
-                                <div class="th-social">
-                                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank" href="https://linkedin.com/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="box-title"><a href="team-details.html">Dr. Wilium Lily</a></h3>
-                            <span class="team-desig">Cardiologist</span>
-                        </div>
-                    </div>
-
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="th-team team-card">
-                            <div class="box-img">
-                                <img src="{{ asset('assets_portal/img/team/team_1_8.jpg') }}" alt="Team">
-                                <div class="th-social">
-                                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank" href="https://linkedin.com/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h3 class="box-title"><a href="team-details.html">Dr. Esabel Macran</a></h3>
-                            <span class="team-desig">Dentist</span>
-                        </div>
-                    </div>
-
+                        @endforeach
+                    @endif
                 </div>
             </div>
         </div>
@@ -436,7 +258,7 @@
                 <div class="process-card">
                     <div class="box-img">
                         <div class="img">
-                            <img src="{{ asset('assets_portal/img/normal/process_card_1.jpg') }}" alt="icon">
+                            <img src="{{ asset('assets_portal/img/normal/Pendaftaran.png') }}" alt="icon">
                         </div>
                         <p class="box-number">01</p>
                     </div>
@@ -446,7 +268,7 @@
                 <div class="process-card">
                     <div class="box-img">
                         <div class="img">
-                            <img src="{{ asset('assets_portal/img/normal/process_card_2.jpg') }}" alt="icon">
+                            <img src="{{ asset('assets_portal/img/normal/Pemeriksaan.png') }}" alt="icon">
                         </div>
                         <p class="box-number">02</p>
                     </div>
@@ -456,7 +278,7 @@
                 <div class="process-card">
                     <div class="box-img">
                         <div class="img">
-                            <img src="{{ asset('assets_portal/img/normal/process_card_3.jpg') }}" alt="icon">
+                            <img src="{{ asset('assets_portal/img/normal/Feedback.png') }}" alt="icon">
                         </div>
                         <p class="box-number">03</p>
                     </div>
@@ -467,7 +289,7 @@
                 <div class="process-card">
                     <div class="box-img">
                         <div class="img">
-                            <img src="{{ asset('assets_portal/img/normal/process_card_4.jpg') }}" alt="icon">
+                            <img src="{{ asset('assets_portal/img/normal/monitoring.jpg') }}" alt="icon">
                         </div>
                         <p class="box-number">04</p>
                     </div>
@@ -490,57 +312,28 @@
                             <h2 class="sec-title text-white">Pertanyaan yang Sering Diajukan</h2>
                         </div>
                         <div class="accordion" id="faqAccordion">
-
-
-                            <div class="accordion-card">
-                                <div class="accordion-header" id="collapse-item-1">
-                                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">01.
-                                        What services does the clinic offer?</button>
-                                </div>
-                                <div id="collapse-1" class="accordion-collapse collapse show"
-                                    aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        <p class="faq-text">Our clinic is strategically located for easy access, ensuring
-                                            that you can reach us conveniently from various parts of the community. We also
-                                            provide accessibility.</p>
+                            @if (!empty($faqs))
+                                @foreach ($faqs as $faq)
+                                    <div class="accordion-card">
+                                        <div class="accordion-header" id="collapse-item-{{ $loop->iteration }}">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse-{{ $loop->iteration }}"
+                                                aria-expanded="{{ $loop->first ? 'true' : 'false' }}"
+                                                aria-controls="collapse-{{ $loop->iteration }}">
+                                                {{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}. {{ $faq->judul }}
+                                            </button>
+                                        </div>
+                                        <div id="collapse-{{ $loop->iteration }}"
+                                            class="accordion-collapse collapse {{ $loop->first ? 'show' : '' }}"
+                                            aria-labelledby="collapse-item-{{ $loop->iteration }}"
+                                            data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body">
+                                                <p class="faq-text">{{ $faq->isi }}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-
-
-                            <div class="accordion-card">
-                                <div class="accordion-header" id="collapse-item-2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">02.
-                                        How do I schedule an appointment?</button>
-                                </div>
-                                <div id="collapse-2" class="accordion-collapse collapse "
-                                    aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        <p class="faq-text">Our clinic is strategically located for easy access, ensuring
-                                            that you can reach us conveniently from various parts of the community. We also
-                                            provide accessibility.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="accordion-card">
-                                <div class="accordion-header" id="collapse-item-3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">03.
-                                        What are the clinic hours of operation?</button>
-                                </div>
-                                <div id="collapse-3" class="accordion-collapse collapse "
-                                    aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        <p class="faq-text">Our clinic is strategically located for easy access, ensuring
-                                            that you can reach us conveniently from various parts of the community. We also
-                                            provide accessibility.</p>
-                                    </div>
-                                </div>
-                            </div>
+                                @endforeach
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -559,8 +352,8 @@
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title"><img src="{{ asset('assets_portal/img/theme-img/title_icon.svg') }}"
-                        alt="shape">Testimonials</span>
-                <h2 class="sec-title">What Our Present Says?</h2>
+                        alt="shape">Testimoni</span>
+                <h2 class="sec-title">Apa yang mereka katakan?</h2>
             </div>
             <div class="swiper th-slider" id="testiSlide1"
                 data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"2"}}}'>
@@ -575,16 +368,10 @@
                             <div class="box-quote">
                                 <img src="{{ asset('assets_portal/img/icon/quote_1.svg') }}" alt="Icon">
                             </div>
-                            <p class="box-text">“Objectively deploy open-source web-readiness impactful bandwidth.
-                                Compellingly coordinate business deliverables rather equity invested technologies.
-                                Phosfluorescently reinvent maintainable.”</p>
+                            <p class="box-text">“Pantau Tumbuh sangat membantu saya memahami perkembangan anak dengan mudah. Grafik pertumbuhan yang disediakan benar-benar memudahkan saya memantau kondisi anak setiap bulan!”</p>
                             <div class="box-profile">
-                                <div class="box-img">
-                                    <img src="{{ asset('assets_portal/img/testimonial/testi_1_1.jpg') }}" alt="Avater">
-                                </div>
                                 <div class="box-content">
-                                    <h3 class="box-title">Pelican Steve</h3>
-                                    <span class="box-desig">Neurologist</span>
+                                    <h3 class="box-title">Kafi Rijal Rabbani Sopian</h3>
                                 </div>
                             </div>
                         </div>
@@ -599,16 +386,11 @@
                             <div class="box-quote">
                                 <img src="{{ asset('assets_portal/img/icon/quote_1.svg') }}" alt="Icon">
                             </div>
-                            <p class="box-text">“Objectively deploy open-source web-readiness impactful bandwidth.
-                                Compellingly coordinate business deliverables rather equity invested technologies.
-                                Phosfluorescently reinvent maintainable.”</p>
+                            <p class="box-text">“Dulu saya khawatir anak saya kekurangan gizi, tapi dengan kalkulator gizi dan saran menu MPASI di Pantau Tumbuh, saya jadi lebih percaya diri. Anak saya sekarang lebih sehat dan aktif!”</p>
                             <div class="box-profile">
-                                <div class="box-img">
-                                    <img src="{{ asset('assets_portal/img/testimonial/testi_1_2.jpg') }}" alt="Avater">
-                                </div>
+                                
                                 <div class="box-content">
-                                    <h3 class="box-title">Alexa Milton</h3>
-                                    <span class="box-desig">Physiotherapist</span>
+                                    <h3 class="box-title">Nurlela</h3>
                                 </div>
                             </div>
                         </div>
@@ -623,16 +405,10 @@
                             <div class="box-quote">
                                 <img src="{{ asset('assets_portal/img/icon/quote_1.svg') }}" alt="Icon">
                             </div>
-                            <p class="box-text">“Objectively deploy open-source web-readiness impactful bandwidth.
-                                Compellingly coordinate business deliverables rather equity invested technologies.
-                                Phosfluorescently reinvent maintainable.”</p>
+                            <p class="box-text">“Layanan konsultasi online di Pantau Tumbuh sangat praktis. Saya bisa langsung bertanya ke dokter tanpa harus antre di klinik, dan jawabannya sangat membantu!”</p>
                             <div class="box-profile">
-                                <div class="box-img">
-                                    <img src="{{ asset('assets_portal/img/testimonial/testi_1_1.jpg') }}" alt="Avater">
-                                </div>
                                 <div class="box-content">
-                                    <h3 class="box-title">Pelican Steve</h3>
-                                    <span class="box-desig">Neurologist</span>
+                                    <h3 class="box-title">Ahmad Hilmy</h3>
                                 </div>
                             </div>
                         </div>
@@ -647,16 +423,10 @@
                             <div class="box-quote">
                                 <img src="{{ asset('assets_portal/img/icon/quote_1.svg') }}" alt="Icon">
                             </div>
-                            <p class="box-text">“Objectively deploy open-source web-readiness impactful bandwidth.
-                                Compellingly coordinate business deliverables rather equity invested technologies.
-                                Phosfluorescently reinvent maintainable.”</p>
+                            <p class="box-text">“Saya suka fitur pengingat jadwal imunisasi! Jadi tidak pernah lagi lupa kapan anak harus ke posyandu. Benar-benar membantu orang tua yang sibuk seperti saya.”</p>
                             <div class="box-profile">
-                                <div class="box-img">
-                                    <img src="{{ asset('assets_portal/img/testimonial/testi_1_2.jpg') }}" alt="Avater">
-                                </div>
                                 <div class="box-content">
-                                    <h3 class="box-title">Alexa Milton</h3>
-                                    <span class="box-desig">Physiotherapist</span>
+                                    <h3 class="box-title">Nadia Shaliha</h3>
                                 </div>
                             </div>
                         </div>
@@ -679,7 +449,7 @@
                 </div>
                 <div class="col-lg-auto d-none d-lg-block">
                     <div class="sec-btn">
-                        <a href="{{ url('/artikel') }}" class="th-btn style4">Lihat Semua</a>
+                        <a href="{{ url('artikel_kesehatan') }}" class="th-btn style4">Lihat Semua</a>
                     </div>
                 </div>
             </div>
@@ -687,108 +457,30 @@
                 <div class="swiper th-slider has-shadow" id="blogSlider1"
                     data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ asset('assets_portal/img/blog/blog_1_1.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-user"></i>By Mediax</a>
-                                        <a href="blog.html"><i class="fal fa-calendar"></i>15 March, 2024</a>
+                        @if (!empty($artikels))
+                            @foreach ($artikels as $artikel)
+                                <div class="swiper-slide">
+                                    <div class="blog-card">
+                                        <div class="blog-img">
+                                            <img src="{{ asset('image_artikel/' . $artikel->image) }}" alt="blog image">
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-meta">
+                                                <a href="{{ url('artikel_detail') }}/{{ $artikel->slug }}"><i
+                                                        class="fal fa-user"></i>{{ $artikel->user->nama }}</a>
+                                                <a href="{{ url('artikel_detail') }}/{{ $artikel->slug }}"><i
+                                                        class="fal fa-calendar"></i>{{ $artikel->created_at->format('d M Y') }}</a>
+                                            </div>
+                                            <h3 class="box-title"><a
+                                                    href="{{ url('artikel_detail') }}/{{ $artikel->slug }}">{{ $artikel->judul }}</a>
+                                            </h3>
+                                            <a href="{{ url('artikel_detail') }}/{{ $artikel->slug }}"
+                                                class="th-btn btn-sm">Read More</a>
+                                        </div>
                                     </div>
-                                    <h3 class="box-title"><a href="blog-details.html">How Business Is Taking Over & What
-                                            to Do About It</a></h3>
-                                    <a href="blog-details.html" class="th-btn btn-sm">Read More</a>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ asset('assets_portal/img/blog/blog_1_2.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-user"></i>By Mediax</a>
-                                        <a href="blog.html"><i class="fal fa-calendar"></i>16 March, 2024</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Health vs. Wealth Navigate Business
-                                            in Medicine</a></h3>
-                                    <a href="blog-details.html" class="th-btn btn-sm">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ asset('assets_portal/img/blog/blog_1_3.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-user"></i>By Mediax</a>
-                                        <a href="blog.html"><i class="fal fa-calendar"></i>17 March, 2024</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Preserving Care Strategy Amidst Food
-                                            Changes</a></h3>
-                                    <a href="blog-details.html" class="th-btn btn-sm">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ asset('assets_portal/img/blog/blog_1_4.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-user"></i>By Mediax</a>
-                                        <a href="blog.html"><i class="fal fa-calendar"></i>19 March, 2024</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Healthcare Tips Navigating Business
-                                            & Patient Care</a></h3>
-                                    <a href="blog-details.html" class="th-btn btn-sm">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ asset('assets_portal/img/blog/blog_1_1.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-user"></i>By Mediax</a>
-                                        <a href="blog.html"><i class="fal fa-calendar"></i>15 March, 2024</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Strategies Against Corporate
-                                            Intrusion in Healthcare</a></h3>
-                                    <a href="blog-details.html" class="th-btn btn-sm">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ asset('assets_portal/img/blog/blog_1_2.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-user"></i>By Mediax</a>
-                                        <a href="blog.html"><i class="fal fa-calendar"></i>16 March, 2024</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Transform Your Nutrition with
-                                            Organic Meal</a></h3>
-                                    <a href="blog-details.html" class="th-btn btn-sm">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
+                            @endforeach
+                        @endif
                     </div>
                 </div>
                 <button data-slider-prev="#blogSlider1" class="slider-arrow slider-prev"><i

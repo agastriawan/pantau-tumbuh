@@ -10,20 +10,22 @@ use App\Http\Controllers\UsermanagementController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\PublikController;
+use App\Http\Controllers\KontakController;
 use App\Http\Middleware\RoleMiddleware;
 use App\Http\Middleware\RedirectIfAuthenticated;
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('umkm')->middleware('auth');
 Route::post('auth/_logout', [AuthController::class, '_logout']);
 
-Route::prefix('auth')->middleware([RedirectIfAuthenticated::class.':guest'])->group(function () {
+Route::prefix('auth')->middleware([RedirectIfAuthenticated::class . ':guest'])->group(function () {
     Route::get('login', [AuthController::class, 'login'])->name('login');
     Route::get('register', [AuthController::class, 'register'])->name('register');
     Route::post('_register', [AuthController::class, '_register'])->name('_register');
     Route::post('_login', [AuthController::class, '_login'])->name('_login');
 });
 
-Route::prefix('orangtua')->middleware(['auth', RoleMiddleware::class.':1'])->group(function () {
+Route::prefix('orangtua')->middleware(['auth', RoleMiddleware::class . ':1'])->group(function () {
     Route::prefix('anak')->group(function () {
         Route::get('', [AnakController::class, 'anak'])->name('anak');
         Route::get('tambah_anak', [AnakController::class, 'tambah_anak'])->name('tambah_anak');
@@ -35,7 +37,7 @@ Route::prefix('orangtua')->middleware(['auth', RoleMiddleware::class.':1'])->gro
     });
 });
 
-Route::prefix('monitoring')->middleware(['auth', RoleMiddleware::class.':1,2'])->group(function () {
+Route::prefix('monitoring')->middleware(['auth', RoleMiddleware::class . ':1,2'])->group(function () {
     Route::get('', [MonitoringController::class, 'monitoring'])->name('monitoring');
     Route::get('tambah_monitoring', [MonitoringController::class, 'tambah_monitoring'])->name('tambah_monitoring');
     Route::get('edit_monitoring/{id}', [MonitoringController::class, 'edit_monitoring'])->name('edit_monitoring');
@@ -51,7 +53,7 @@ Route::prefix('monitoring')->middleware(['auth', RoleMiddleware::class.':1,2'])-
     });
 });
 
-Route::prefix('usermanagement')->middleware(['auth', RoleMiddleware::class.':3'])->group(function () {
+Route::prefix('usermanagement')->middleware(['auth', RoleMiddleware::class . ':3'])->group(function () {
     Route::get('', [UsermanagementController::class, 'usermanagement'])->name('usermanagement');
     Route::get('tambah_user', [UsermanagementController::class, 'tambah_user'])->name('tambah_user');
     Route::get('edit_user/{id}', [UsermanagementController::class, 'edit_user'])->name('edit_user');
@@ -61,7 +63,7 @@ Route::prefix('usermanagement')->middleware(['auth', RoleMiddleware::class.':3']
     Route::delete('_delete_user/{id}', [UsermanagementController::class, '_delete_user'])->name('_delete_user');
 });
 
-Route::prefix('artikel')->middleware(['auth', RoleMiddleware::class.':3'])->group(function () {
+Route::prefix('artikel')->middleware(['auth', RoleMiddleware::class . ':3'])->group(function () {
     Route::get('', [ArtikelController::class, 'artikel'])->name('artikel');
     Route::get('tambah_artikel', [ArtikelController::class, 'tambah_artikel'])->name('tambah_artikel');
     Route::get('edit_artikel/{id}', [ArtikelController::class, 'edit_artikel'])->name('edit_artikel');
@@ -71,7 +73,7 @@ Route::prefix('artikel')->middleware(['auth', RoleMiddleware::class.':3'])->grou
     Route::delete('_delete_artikel/{id}', [ArtikelController::class, '_delete_artikel'])->name('_delete_artikel');
 });
 
-Route::prefix('faq')->middleware(['auth', RoleMiddleware::class.':3'])->group(function () {
+Route::prefix('faq')->middleware(['auth', RoleMiddleware::class . ':3'])->group(function () {
     Route::get('', [FaqController::class, 'faq'])->name('faq');
     Route::get('tambah_faq', [FaqController::class, 'tambah_faq'])->name('tambah_faq');
     Route::get('edit_faq/{id}', [FaqController::class, 'edit_faq'])->name('edit_faq');
@@ -81,28 +83,27 @@ Route::prefix('faq')->middleware(['auth', RoleMiddleware::class.':3'])->group(fu
     Route::delete('_delete_faq/{id}', [FaqController::class, '_delete_faq'])->name('_delete_faq');
 });
 
+Route::prefix('kontak')->middleware(['auth', RoleMiddleware::class . ':3'])->group(function () {
+    Route::get('', [KontakController::class, 'kontak'])->name('kontak');
+    Route::get('tambah_kontak', [KontakController::class, 'tambah_kontak'])->name('tambah_kontak');
+    Route::get('detail_kontak/{id}', [KontakController::class, 'detail_kontak'])->name('detail_kontak');
+    Route::post('_list_kontak', [KontakController::class, '_list_kontak'])->name('_list_kontak');
+    Route::delete('_delete_kontak/{id}', [KontakController::class, '_delete_kontak'])->name('_delete_kontak');
+});
+
 Route::prefix('profile')->middleware('auth')->group(function () {
     Route::get('', [ProfileController::class, 'profile'])->name('profile');
     Route::post('_edit_user', [ProfileController::class, '_edit_user'])->name('_edit_user');
     Route::post('_edit_password', [ProfileController::class, '_edit_password'])->name('_edit_password');
 });
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/tentang-kami', function () {
-    return view('about');
-});
-
-Route::get('/kontak', function () {
-    return view('contact');
-});
-
-Route::get('/artikel-detail', function () {
-    return view('artikel-detail');
-});
-
+Route::get('/', [PublikController::class, 'index'])->name('index');
+Route::get('tentang_kami', [PublikController::class, 'tentang_kami'])->name('tentang_kami');
+Route::get('kontak_kami', [PublikController::class, 'kontak_kami'])->name('kontak_kami');
+Route::get('artikel_kesehatan', [PublikController::class, 'artikel_kesehatan'])->name('artikel_kesehatan');
+Route::get('artikel_detail/{slug}', [PublikController::class, 'artikel_detail'])->name('artikel_detail');
+Route::post('_kontak', [PublikController::class, '_kontak'])->name('_kontak');
+ 
 Route::get('/404', function () {
     return view('404');
-})->name('notFound'); 
+})->name('notFound');
