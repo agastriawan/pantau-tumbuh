@@ -313,27 +313,28 @@
                         </div>
                         <div class="accordion" id="faqAccordion">
                             @if (!empty($faqs))
-                                @foreach ($faqs as $faq)
-                                    <div class="accordion-card">
-                                        <div class="accordion-header" id="collapse-item-{{ $loop->iteration }}">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapse-{{ $loop->iteration }}"
-                                                aria-expanded="{{ $loop->first ? 'true' : 'false' }}"
-                                                aria-controls="collapse-{{ $loop->iteration }}">
-                                                {{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}. {{ $faq->judul }}
-                                            </button>
-                                        </div>
-                                        <div id="collapse-{{ $loop->iteration }}"
-                                            class="accordion-collapse collapse {{ $loop->first ? 'show' : '' }}"
-                                            aria-labelledby="collapse-item-{{ $loop->iteration }}"
-                                            data-bs-parent="#faqAccordion">
-                                            <div class="accordion-body">
-                                                <p class="faq-text">{{ $faq->isi }}</p>
-                                            </div>
+                            @foreach ($faqs as $faq)
+                                <div class="accordion-card">
+                                    <div class="accordion-header" id="collapse-item-{{ $loop->iteration }}">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-{{ $loop->iteration }}"
+                                            aria-expanded="false"
+                                            aria-controls="collapse-{{ $loop->iteration }}">
+                                            {{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}. {{ $faq->judul }}
+                                        </button>
+                                    </div>
+                                    <div id="collapse-{{ $loop->iteration }}"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="collapse-item-{{ $loop->iteration }}"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p class="faq-text">{{ $faq->isi }}</p>
                                         </div>
                                     </div>
-                                @endforeach
-                            @endif
+                                </div>
+                            @endforeach
+                        @endif
+                        
                         </div>
                     </div>
                 </div>
