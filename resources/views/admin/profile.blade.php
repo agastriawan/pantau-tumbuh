@@ -26,7 +26,8 @@
 
                             <div class="silva-main-sections">
                                 <div class="silva-profile-main">
-                                    <img src="{{ Auth::user()->foto ? asset('foto_user/' . Auth::user()->foto) : asset('assets_admin/images/user.png') }}" id="imagePreview"
+                                    <img src="{{ Auth::user()->foto ? asset('foto_user/' . Auth::user()->foto) : asset('assets_admin/images/user.png') }}"
+                                        id="imagePreview"
                                         class="rounded-circle img-fluid avatar-xxl img-thumbnail float-start"
                                         alt="image profile" style="cursor: pointer;">
 
@@ -58,8 +59,16 @@
                             <li class="nav-item">
                                 <a class="nav-link p-2 active" id="setting_tab" data-bs-toggle="tab" href="#profile_setting"
                                     role="tab">
-                                    <span class="d-block d-sm-none"><i class="mdi mdi-information"></i></span>
-                                    <span class="d-none d-sm-block">Ubah Profile</span>
+                                    {{-- <span class="d-block d-sm-none"><i class="mdi mdi-information"></i></span> --}}
+                                    <span class="d-sm-block">Ubah Profile</span>
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2" id="password_tab" data-bs-toggle="tab" href="#password_setting"
+                                    role="tab">
+                                    {{-- <span class="d-block d-sm-none"><i class="mdi mdi-information"></i></span> --}}
+                                    <span class="d-sm-block">Ubah Password</span>
                                 </a>
                             </li>
                         </ul>
@@ -69,7 +78,7 @@
                                 <div class="row">
 
                                     <div class="row">
-                                        <div class="col-lg-6 col-xl-6">
+                                        <div class="col-lg-12 col-xl-12">
                                             <div class="card border">
 
                                                 <div class="card-header">
@@ -126,21 +135,26 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="form-group row">
-                                                            <div class="col-lg-12 col-xl-12">
-                                                                <button type="submit"
-                                                                    class="btn btn-primary mb-2 mb-md-0">Ubah
+                                                        <div class="row text-end">
+                                                            <div class="col-md-12">
+                                                                <button type="submit" class="btn btn-primary">Ubah
                                                                     Informasi Pribadi</button>
-                                                                <button type="button"
-                                                                    class="btn btn-danger">Batal</button>
                                                             </div>
                                                         </div>
                                                     </form>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <div class="col-lg-6 col-xl-6">
+                            <div class="tab-pane pt-4" id="password_setting" role="tabpanel">
+                                <div class="row">
+
+                                    <div class="row">
+
+                                        <div class="col-lg-12 col-xl-12">
                                             <div class="card border mb-0">
 
                                                 <div class="card-header">
@@ -183,13 +197,10 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="form-group row">
-                                                            <div class="col-lg-12 col-xl-12">
-                                                                <button type="submit"
-                                                                    class="btn btn-primary mb-2 mb-md-0">Ubah
+                                                        <div class="row text-end">
+                                                            <div class="col-md-12">
+                                                                <button type="submit" class="btn btn-primary">Ubah
                                                                     Password</button>
-                                                                <button type="button"
-                                                                    class="btn btn-danger">Batal</button>
                                                             </div>
                                                         </div>
                                                     </form>
