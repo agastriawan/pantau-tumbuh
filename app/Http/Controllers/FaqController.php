@@ -50,7 +50,7 @@ class FaqController extends Controller
     {   
         $messages = [
             'judul.required' => 'Judul wajib diisi.',
-            'isi.required' => 'Tanggal Lahir wajib diisi.',
+            'isi.required' => 'Isi faq wajib diisi.',
         ];
 
         $validator = Validator::make($request->all(), [

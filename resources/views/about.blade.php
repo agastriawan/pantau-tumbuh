@@ -205,7 +205,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/team_1_8.jpg') }}"
+                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/najwa.jpg') }}"
                                     alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://www.instagram.com/hiii_nanazwaquen27/profilecard/?igsh=ZXg4enh1ZXo4cXg1"><i

@@ -52,7 +52,7 @@ class ArtikelController extends Controller
     {   
         $messages = [
             'judul.required' => 'Judul wajib diisi.',
-            'isi.required' => 'Tanggal Lahir wajib diisi.',
+            'isi.required' => 'Isi artikel wajib diisi.',
             'image.required' => 'Image wajib diisi.',
             'image.max' => 'Image maksimal 10MB.',
         ];
