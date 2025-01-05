@@ -31,6 +31,11 @@
                 </li>
             </ul>
         </div>
+        <div class="col-auto">
+            <div class="header-button">
+                <a href="{{ url('auth/login') }}" class="th-btn" id="btn-daftar">Masuk</a>
+            </div>
+        </div>
     </div>
 </div>
 
