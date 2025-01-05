@@ -5,7 +5,7 @@
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget footer-widget">
                         <div class="th-widget-about">
-                            <div class="about-logo">
+                            <div class="about-logo" style="margin-left: -22px">
                                 <a href="{{ url('/') }}"><img src="{{ asset('assets_portal/img/logo-3.png') }}"
                                         alt="Mediax"></a>
                             </div>
