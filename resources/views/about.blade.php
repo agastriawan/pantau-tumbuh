@@ -87,7 +87,7 @@
                     <div class="swiper-slide">
                         <div class="th-team team-card">
                             <div class="box-img">
-                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/team_1_8.jpg') }}"
+                                <img class="img-team-web" src="{{ asset('assets_portal/img/team/rafa.png') }}"
                                     alt="Team">
                                 <div class="th-social">
                                     <a target="_blank" href="https://www.instagram.com/abdurrafa22_?igsh=MW9iMHY1bndwNnQyeg=="><i class="fab fa-instagram"></i></a>
