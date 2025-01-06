@@ -41,7 +41,11 @@ class MonitoringController extends Controller
 
     public function _export()
     {
-        $monitoring = Monitoring::with('anak:id,nama,jenis_kelamin')->get();
+        if (Auth::user()->role->id == 1){
+            $monitoring = Monitoring::with('anak:id,nama,jenis_kelamin')->where('user_id', Auth::user()->id)->get();
+        } else {
+            $monitoring = Monitoring::with('anak:id,nama,jenis_kelamin')->get();
+        }
 
         $data = $monitoring->map(function ($item) {
             return [
@@ -64,7 +68,11 @@ class MonitoringController extends Controller
 
     public function _list_monitoring()
     {
-        $monitoring = Monitoring::with('anak:id,nama')->where('user_id', Auth::user()->id)->get();
+        if (Auth::user()->role->id == 1){
+            $monitoring = Monitoring::with('anak:id,nama')->where('user_id', Auth::user()->id)->get();
+        } else {
+            $monitoring = Monitoring::with('anak:id,nama')->get();
+        }
 
         $data = $monitoring->map(function ($item) {
             return [
