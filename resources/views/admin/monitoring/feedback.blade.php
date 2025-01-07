@@ -112,6 +112,9 @@
                         @elseif ($feedback)
                         <div class="row">
                             <div class="mb-3 col-md-12">
+                                <strong>Tenaga Medis:</strong> {{ $dokter[0]->nama }}
+                            </div>
+                            <div class="mb-3 col-md-12">
                                 <strong>Jawaban Tenaga Medis:</strong> {!! $feedback->isi_feedback !!}
                             </div>
                             <div class="mb-3 col-md-6">

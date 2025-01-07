@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Anak;
 use App\Models\Feedback;
+use App\Models\User;
 use App\Models\Monitoring;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -14,17 +15,24 @@ class FeedbackController extends Controller
 {
     public function feedback($id)
     {
-        $monitoring = Monitoring::findOrFail($id); 
+        $monitoring = Monitoring::findOrFail($id);
         $anak = Anak::select('id', 'nama')->get();
         $feedback = Feedback::where('rekaman_monitoring_id', $id)->first();
-    
+        $dokter = '';
+        if (!empty($feedback->user_id)) {
+            $dokter = User::where('id', $feedback->user_id)->get();
+        }
+
         $data = [
             "monitoring" => $monitoring,
-            "anak" => $anak, 
-            "feedback" => $feedback, 
+            "anak" => $anak,
+            "feedback" => $feedback,
+            "dokter" => $dokter
         ];
 
-        return view('admin/monitoring/feedback', $data); 
+        // dd($data[0]->nama);
+
+        return view('admin/monitoring/feedback', $data);
     }
 
     public function _feedback(Request $request)
@@ -53,17 +61,17 @@ class FeedbackController extends Controller
         }
 
         try {
-            $suratName = $request->nama; 
+            $suratName = $request->nama;
             $suratExtension = $request->file('surat_rujukan')->getClientOriginalExtension();
-            $suratNameWithPrefix = 'Surat Rujukan_'. '_' . $suratName . '_' . time(); 
+            $suratNameWithPrefix = 'Surat Rujukan_' . '_' . $suratName . '_' . time();
             $surat = $request->file('surat_rujukan');
-            $surat->move(public_path('surat_rujukan'), $suratNameWithPrefix . '.' . $suratExtension); 
+            $surat->move(public_path('surat_rujukan'), $suratNameWithPrefix . '.' . $suratExtension);
 
-            $modulName = $request->nama; 
+            $modulName = $request->nama;
             $modulExtension = $request->file('modul_kesehatan')->getClientOriginalExtension();
-            $modulNameWithPrefix = 'Modul Kesehatan_'. '_' . $modulName . '_' . time(); 
+            $modulNameWithPrefix = 'Modul Kesehatan_' . '_' . $modulName . '_' . time();
             $modul = $request->file('modul_kesehatan');
-            $modul->move(public_path('modul_kesehatan'), $modulNameWithPrefix . '.' . $modulExtension); 
+            $modul->move(public_path('modul_kesehatan'), $modulNameWithPrefix . '.' . $modulExtension);
 
             $monitoring = Monitoring::findOrFail($request->rekaman_monitoring_id);
 
